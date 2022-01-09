@@ -1,0 +1,29 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ compile can be found at:
+	Reports: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/reports/memRead
+	Log files: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/logs/memRead
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead.xo.compile_summary, at Sun Dec 12 20:55:04 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Sun Dec 12 20:55:04 2021
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/reports/memRead/v++_compile_memRead_guidance.html', at Sun Dec 12 20:55:05 2021
+INFO: [v++ 60-895]   Target platform: /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-585] Compiling for hardware target
+INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+INFO: [v++ 60-242] Creating kernel: 'memRead'
+INFO: [v++ 60-1616] Creating a HLS clock using kernel_frequency option: 300 MHz
+
+===>The following messages were generated while  performing high-level synthesis for kernel: memRead Log file: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead/memRead/vitis_hls.log :
+INFO: [v++ 204-61] Pipelining loop 'Init_VITIS_LOOP_124_1_VITIS_LOOP_125_2'.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 77, loop 'Init_VITIS_LOOP_124_1_VITIS_LOOP_125_2'
+INFO: [v++ 204-61] Pipelining loop 'VITIS_LOOP_185_4'.
+INFO: [v++ 204-61] Discarding stage scheduling solution.
+INFO: [v++ 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 87, loop 'VITIS_LOOP_185_4'
+INFO: [v++ 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [v++ 200-789] **** Estimated Fmax: 320.36 MHz
+INFO: [v++ 60-594] Finished kernel compilation
+INFO: [v++ 60-244] Generating system estimate report...
+INFO: [v++ 60-1092] Generated system estimate report: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/reports/memRead/system_estimate_memRead.xtxt
+INFO: [v++ 60-586] Created tmp.hw/memRead.xo
+INFO: [v++ 60-2343] Use the vitis_analyzer tool to visualize and navigate the relevant reports. Run the following command. 
+    vitis_analyzer /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead.xo.compile_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 6s

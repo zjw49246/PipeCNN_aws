@@ -1,0 +1,174 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'zhoujw' on host 'cilantro.eecs.umich.edu' (Linux_x86_64 version 5.11.0-22-generic) on Tue Dec 14 21:03:22 EST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv'
+WARNING: [HLS 200-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to :/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/include:/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/include.
+Sourcing Tcl script 'coreConv.tcl'
+INFO: [HLS 200-1510] Running: open_project coreConv 
+INFO: [HLS 200-10] Creating and opening project '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv'.
+INFO: [HLS 200-1510] Running: set_top coreConv 
+INFO: [HLS 200-1510] Running: add_files /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp -cflags  -g -D VGG16 -I /home/zhoujw/FPGA/PipeCNN/project_xilinx/device  
+INFO: [HLS 200-10] Adding design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname coreConv 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 206.078 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.51 seconds. CPU system time: 0.52 seconds. Elapsed time: 3.26 seconds; current allocated memory: 207.981 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' into 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:105:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' into 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:240:12)
+INFO: [HLS 214-131] Inlining function 'mac(lane_data, lane_data)' into 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:127:30)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:126:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_106_2' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:106:21) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:106:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_112_3' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:112:21) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:112:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_117_4' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:117:22) in function 'coreConv' completely with a factor of 6 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:117:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_117_4' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:117:22) in function 'coreConv' completely with a factor of 6 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:117:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_128_5' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:128:31) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:128:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_130_6' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:130:20) in function 'coreConv' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:130:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_130_6' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:130:20) in function 'coreConv' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:130:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_141_7' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:141:31) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:141:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_8' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:147:35) in function 'coreConv' completely with a factor of 5 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:147:35)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:53:22) in function 'coreConv' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:53:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_147_8' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:147:35) in function 'coreConv' completely with a factor of 5 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:147:35)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:53:22) in function 'coreConv' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:53:22)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_164_9' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:164:27) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:164:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_168_10' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:168:32) in function 'coreConv' completely with a factor of 6 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:168:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_168_10' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:168:32) in function 'coreConv' completely with a factor of 6 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:168:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_236_11' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:236:22) in function 'coreConv' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:236:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.24 seconds. CPU system time: 0.4 seconds. Elapsed time: 3.63 seconds; current allocated memory: 209.556 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 209.559 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 217.131 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 226.051 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_101_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:88) in function 'coreConv' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:89:13) to (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:244:2) in function 'coreConv'... converting 11 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'coreConv' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:64)...32 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.31 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.32 seconds; current allocated memory: 257.420 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 255.734 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'coreConv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'coreConv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln55_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln55_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln55_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln55_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_101_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_101_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 256.661 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 257.780 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'coreConv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/output_num' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/conv_loop_cnt' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/contol' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/frac_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/frac_din' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/frac_dout' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/bias_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/bias_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/bias_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/bias_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/weight_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/weight_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/weight_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/weight_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/conv_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/conv_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/conv_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'coreConv/conv_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'coreConv' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'output_num', 'conv_loop_cnt', 'contol', 'frac_w', 'frac_din', 'frac_dout' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_17_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'coreConv'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.26 seconds; current allocated memory: 259.838 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'coreConv_mul_32s_32s_32_2_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'coreConv_mul_8s_8s_16_1_1_Multiplier_1'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.69 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.74 seconds; current allocated memory: 271.867 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for coreConv.
+INFO: [VLOG 209-307] Generating Verilog RTL for coreConv.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 436.49 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 9.74 seconds. CPU system time: 1.02 seconds. Elapsed time: 9.99 seconds; current allocated memory: 272.296 MB.
+INFO: [HLS 200-1510] Running: export_design 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/storage/gefeizuo/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 21:03:44 2021...
+INFO: [HLS 200-802] Generated output file coreConv/solution/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.9 seconds. CPU system time: 1.28 seconds. Elapsed time: 20.84 seconds; current allocated memory: 276.433 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 23.45 seconds. Total CPU system time: 3.03 seconds. Total elapsed time: 32.4 seconds; peak allocated memory: 271.867 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Dec 14 21:03:54 2021...

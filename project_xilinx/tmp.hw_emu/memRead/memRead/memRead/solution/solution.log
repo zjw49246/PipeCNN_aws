@@ -1,0 +1,199 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname memRead 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 190.077 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.61 seconds. CPU system time: 0.49 seconds. Elapsed time: 3.21 seconds; current allocated memory: 191.841 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'memRead' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:310:20)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'memRead' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:297:18)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<16>, 0ul, 0ul, 0ul> const&)' into 'memRead' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:279:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_233_5' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:233:55) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:233:55)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_274_6' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:274:32) in function 'memRead' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:274:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_288_7' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:288:51) in function 'memRead' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:288:51)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_291_8' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:291:20) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:291:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_291_8' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:291:20) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:291:20)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_303_9' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:303:51) in function 'memRead' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:303:51)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_305_10' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:305:21) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:305:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_305_10' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:305:21) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:305:21)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_137_3' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:137:39) in function 'memRead' completely with a factor of 4 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:137:39)
+WARNING: [HLS 214-250] Ignore array partition/reshape applied to 'win_buffer' in struct. Please apply disaggregate or aggregate pragma.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.49 seconds. CPU system time: 0.41 seconds. Elapsed time: 3.89 seconds; current allocated memory: 194.211 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 194.212 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 202.391 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 211.365 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_125_2' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:125) in function 'memRead' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_185_4' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:93) in function 'memRead' automatically.
+INFO: [XFORM 203-102] Partitioning array 'weight_buffer.lane.data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:120) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weight_buffer.lane.data.0' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:120) in dimension 2 automatically.
+INFO: [XFORM 203-102] Partitioning array 'weight_buffer.lane.data.1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:120) in dimension 2 automatically.
+INFO: [XFORM 203-131] Reshaping array 'win_buffer.data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:117) in dimension 1 completely.
+INFO: [XFORM 203-102] Partitioning array 'win_buffer.data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:117) in dimension 2 automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:93:20) to (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:221:32) in function 'memRead'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:113:8) in function 'memRead'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:152:8) to (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185:20) in function 'memRead'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'memRead' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:49)...12 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.66 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.69 seconds; current allocated memory: 243.883 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_124_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124:45) in function 'memRead'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Init' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123:24) in function 'memRead'.
+INFO: [HLS 200-472] Inferring partial write operation for 'win_buffer[0].data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:143:105)
+INFO: [HLS 200-472] Inferring partial write operation for 'win_buffer[0].data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239:126)
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_buffer[0][0].lane.data' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264:136)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.46 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 245.849 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'memRead' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'memRead' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=bound4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul47) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln124) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln123) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul47_mid1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln183_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln224) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln223) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln229) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln229_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln239) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln264) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln263_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln263_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln301) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln301) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln287) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln287_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln287) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Init_VITIS_LOOP_124_1_VITIS_LOOP_125_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 77, loop 'Init_VITIS_LOOP_124_1_VITIS_LOOP_125_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_185_4'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 87, loop 'VITIS_LOOP_185_4'
+WARNING: [HLS 200-871] Estimated clock period (3.1215ns) exceeds the target (target clock period: 3.333ns, clock uncertainty: 0.89991ns, effective delay budget: 2.43309ns).
+WARNING: [HLS 200-1016] The critical path in module 'memRead' consists of the following:	'add' operation ('item_loop_cnt', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:386) [889]  (0.88 ns)
+	'select' operation ('item_loop_cnt', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348) [908]  (0.227 ns)
+	'phi' operation ('item_loop_cnt') with incoming values : ('item_loop_cnt', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348) [391]  (0 ns)
+	'icmp' operation ('icmp_ln192', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192) [410]  (0.859 ns)
+	'select' operation ('item_loop_bound', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192) [424]  (0.276 ns)
+	'add' operation ('add_ln348', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348) [865]  (0.88 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.68 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.71 seconds; current allocated memory: 249.291 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.04 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.08 seconds; current allocated memory: 253.832 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'memRead' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_dim1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_dim2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_dim1xdim2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim4_div_lane' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim1x2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_dim1x2x3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/conv_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/padding' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/split' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/group_num_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/group_num_y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/group_rem_size_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/group_rem_size_xyz' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/win_size_x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/win_size_y' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/win_size_xyz' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bottom' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weights' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bias_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bias_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bias_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/bias_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/weight_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memRead/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'memRead' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'data_dim1', 'data_dim2', 'data_dim1xdim2', 'weight_dim1', 'weight_dim2', 'weight_dim3', 'weight_dim4_div_lane', 'weight_dim1x2', 'weight_dim1x2x3', 'conv_x', 'stride', 'padding', 'split', 'group_num_x', 'group_num_y', 'group_rem_size_x', 'group_rem_size_xyz', 'win_size_x', 'win_size_y', 'win_size_xyz', 'bottom', 'weights', 'bias' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_13s_8ns_8ns_13ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_13s_8ns_8ns_8ns_13_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ama_addmuladd_16ns_16ns_16ns_18s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_mul_sub_14ns_16ns_8ns_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_12s_16s_8ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_8ns_8ns_16_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8ns_24ns_24_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8ns_8ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_24ns_32s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_30ns_9s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9s_8ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_13s_8ns_13_4_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_14ns_16ns_30_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_8ns_24_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_8ns_18_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'memRead'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.5 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.55 seconds; current allocated memory: 265.034 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'memRead_mul_8ns_8ns_16_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'memRead_mul_9s_8ns_17_1_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'memRead_mul_30ns_9s_32_2_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'memRead_mul_24ns_32s_32_2_1_Multiplier_3'
+INFO: [RTMG 210-282] Generating pipelined core: 'memRead_mul_16ns_32s_32_2_1_Multiplier_4'
+INFO: [RTMG 210-278] Implementing memory 'memRead_win_buffer_0_data_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'memRead_weight_buffer_0_0_lane_data_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 6.84 seconds. CPU system time: 0.11 seconds. Elapsed time: 6.95 seconds; current allocated memory: 290.913 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for memRead.
+INFO: [VLOG 209-307] Generating Verilog RTL for memRead.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.

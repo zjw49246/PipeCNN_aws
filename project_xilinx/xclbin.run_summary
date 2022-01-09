@@ -1,0 +1,134 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "1",
+        "patch": "0"
+    },
+    "generation": {
+        "source": "ocl",
+        "PID": "2384213",
+        "timestamp": "1639370231836"
+    },
+    "files": [
+        {
+            "name": "profile_summary.csv",
+            "type": "PROFILE"
+        },
+        {
+            "name": "timeline_trace.csv",
+            "type": "TRACE"
+        }
+    ],
+    "profile": {
+        "header": {
+            "name": "Profile Summary",
+            "generated": "2021-12-12 23:37:11",
+            "epochTime": "1639370231792",
+            "application": "run.exe",
+            "platform": "Xilinx",
+            "toolVersion": "2020.2",
+            "XRT build version": "2.8.0",
+            "Build version branch": "2020.2",
+            "Build version hash": "b94857f15ba8c8251df446e8c51af7e0a7c9e061",
+            "Build version date": "N\/A",
+            "flow": "Software Emulation",
+            "devices": "",
+            "totalTime": "43.096384999999998"
+        },
+        "apiCalls": {
+            "clCreateProgramWithBinary": {
+                "numCalls": "1",
+                "totalTime": "39.566830000000003",
+                "minTime": "39.566830000000003",
+                "avgTime": "39.566830000000003",
+                "maxTime": "39.566830000000003"
+            },
+            "clReleaseContext": {
+                "numCalls": "1",
+                "totalTime": "0.91917600000000022",
+                "minTime": "0.91917600000000022",
+                "avgTime": "0.91917600000000022",
+                "maxTime": "0.91917600000000022"
+            },
+            "clGetDeviceInfo": {
+                "numCalls": "11",
+                "totalTime": "0.19792699999999819",
+                "minTime": "0.0066910000000000025",
+                "avgTime": "0.017993363636363471",
+                "maxTime": "0.11441499999999927"
+            },
+            "clGetExtensionFunctionAddress": {
+                "numCalls": "2",
+                "totalTime": "0.096524000000000498",
+                "minTime": "0.023792999999999509",
+                "avgTime": "0.048262000000000249",
+                "maxTime": "0.072731000000000989"
+            },
+            "clGetPlatformInfo": {
+                "numCalls": "8",
+                "totalTime": "0.064539999999997377",
+                "minTime": "0.0069239999999997082",
+                "avgTime": "0.0080674999999996722",
+                "maxTime": "0.012232000000000909"
+            },
+            "clCreateContext": {
+                "numCalls": "1",
+                "totalTime": "0.039792999999999523",
+                "minTime": "0.039792999999999523",
+                "avgTime": "0.039792999999999523",
+                "maxTime": "0.039792999999999523"
+            },
+            "clGetExtensionFunctionAddressForPlatform": {
+                "numCalls": "2",
+                "totalTime": "0.023585000000000633",
+                "minTime": "0.0086590000000015266",
+                "avgTime": "0.011792500000000317",
+                "maxTime": "0.014925999999999107"
+            },
+            "clGetDeviceIDs": {
+                "numCalls": "2",
+                "totalTime": "0.021841999999999473",
+                "minTime": "0.0084820000000007667",
+                "avgTime": "0.010920999999999736",
+                "maxTime": "0.013359999999998706"
+            }
+        },
+        "kernelEnqueues": "",
+        "computeUnitUtilization": "",
+        "kernels": "",
+        "hostGlobal": {
+            "writes": "",
+            "reads": ""
+        },
+        "guidanceMetadata": {
+            "DEVICE_EXEC_TIME": {
+                "xilinx_aws-vu9p-f1_shell-v04261818_201920_2-0": "0.000000"
+            },
+            "CU_CALLS": "",
+            "MIGRATE_MEM": {
+                "host": "0"
+            },
+            "MEMORY_USAGE": "",
+            "PLRAM_DEVICE": {
+                "all": "1"
+            },
+            "HBM_DEVICE": {
+                "all": "0"
+            },
+            "KDMA_DEVICE": {
+                "all": "0"
+            },
+            "P2P_DEVICE": {
+                "all": "0"
+            },
+            "P2P_HOST_TRANSFERS": {
+                "host": "0"
+            },
+            "PORT_BIT_WIDTH": "",
+            "KERNEL_COUNT": "",
+            "OBJECTS_RELEASED": {
+                "all": "1"
+            }
+        }
+    }
+}

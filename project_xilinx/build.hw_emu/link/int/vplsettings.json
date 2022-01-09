@@ -1,0 +1,21 @@
+{
+    "kernelContainerValues": [
+        "memRead:xo",
+        "coreConv:xo",
+        "memWrite:xo",
+        "maxPool:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/zhoujw\/FPGA\/PipeCNN\/project_xilinx\/build.hw_emu\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/zhoujw\/FPGA\/PipeCNN\/project_xilinx\/build.hw_emu\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

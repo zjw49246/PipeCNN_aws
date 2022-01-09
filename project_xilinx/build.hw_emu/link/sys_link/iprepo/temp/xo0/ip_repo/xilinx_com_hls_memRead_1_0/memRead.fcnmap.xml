@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd">
+    <xd:fcnMap xd:fcnName="memRead" xd:type="hls_opencl" xd:clockId="0" xd:flow="explicit" xd:componentRef="memRead">
+        <xd:interrupt xd:busInterfaceRef="interrupt"/>
+        <xd:ctrlReg xd:busInterface="s_axi_control" xd:portInterfaceType="axilite" xd:name="control" xd:type="ap_ctrl_chain" xd:offset="0x0"/>
+        <xd:arg xd:name="data_dim1" xd:swRootName="data_dim1" xd:dataWidth="8" xd:offset="0x10" xd:portInterfaceType="axilite" xd:direction="in" xd:id="0" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="data_dim2" xd:swRootName="data_dim2" xd:dataWidth="8" xd:offset="0x18" xd:portInterfaceType="axilite" xd:direction="in" xd:id="1" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="data_dim1xdim2" xd:swRootName="data_dim1xdim2" xd:dataWidth="16" xd:offset="0x20" xd:portInterfaceType="axilite" xd:direction="in" xd:id="2" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim1" xd:swRootName="weight_dim1" xd:dataWidth="8" xd:offset="0x28" xd:portInterfaceType="axilite" xd:direction="in" xd:id="3" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim2" xd:swRootName="weight_dim2" xd:dataWidth="8" xd:offset="0x30" xd:portInterfaceType="axilite" xd:direction="in" xd:id="4" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim3" xd:swRootName="weight_dim3" xd:dataWidth="16" xd:offset="0x38" xd:portInterfaceType="axilite" xd:direction="in" xd:id="5" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim4_div_lane" xd:swRootName="weight_dim4_div_lane" xd:dataWidth="16" xd:offset="0x40" xd:portInterfaceType="axilite" xd:direction="in" xd:id="6" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim1x2" xd:swRootName="weight_dim1x2" xd:dataWidth="8" xd:offset="0x48" xd:portInterfaceType="axilite" xd:direction="in" xd:id="7" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="weight_dim1x2x3" xd:swRootName="weight_dim1x2x3" xd:dataWidth="32" xd:offset="0x50" xd:portInterfaceType="axilite" xd:direction="in" xd:id="8" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="conv_x" xd:swRootName="conv_x" xd:dataWidth="8" xd:offset="0x58" xd:portInterfaceType="axilite" xd:direction="in" xd:id="9" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="stride" xd:swRootName="stride" xd:dataWidth="8" xd:offset="0x60" xd:portInterfaceType="axilite" xd:direction="in" xd:id="10" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="padding" xd:swRootName="padding" xd:dataWidth="8" xd:offset="0x68" xd:portInterfaceType="axilite" xd:direction="in" xd:id="11" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="split" xd:swRootName="split" xd:dataWidth="8" xd:offset="0x70" xd:portInterfaceType="axilite" xd:direction="in" xd:id="12" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="group_num_x" xd:swRootName="group_num_x" xd:dataWidth="8" xd:offset="0x78" xd:portInterfaceType="axilite" xd:direction="in" xd:id="13" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="group_num_y" xd:swRootName="group_num_y" xd:dataWidth="8" xd:offset="0x80" xd:portInterfaceType="axilite" xd:direction="in" xd:id="14" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="group_rem_size_x" xd:swRootName="group_rem_size_x" xd:dataWidth="8" xd:offset="0x88" xd:portInterfaceType="axilite" xd:direction="in" xd:id="15" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="group_rem_size_xyz" xd:swRootName="group_rem_size_xyz" xd:dataWidth="32" xd:offset="0x90" xd:portInterfaceType="axilite" xd:direction="in" xd:id="16" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="win_size_x" xd:swRootName="win_size_x" xd:dataWidth="8" xd:offset="0x98" xd:portInterfaceType="axilite" xd:direction="in" xd:id="17" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="win_size_y" xd:swRootName="win_size_y" xd:dataWidth="8" xd:offset="0xA0" xd:portInterfaceType="axilite" xd:direction="in" xd:id="18" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="win_size_xyz" xd:swRootName="win_size_xyz" xd:dataWidth="32" xd:offset="0xA8" xd:portInterfaceType="axilite" xd:direction="in" xd:id="19" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="bottom" xd:swRootName="bottom" xd:dataWidth="64" xd:offset="0xB0" xd:portInterfaceType="axilite" xd:direction="in" xd:id="20" xd:busInterfaceRef="s_axi_control" xd:aximmMasterRef="m_axi_gmem0" xd:aximmMasterDirection="inout" xd:aximmMasterDataWidth="32"/>
+        <xd:arg xd:name="weights" xd:swRootName="weights" xd:dataWidth="64" xd:offset="0xBC" xd:portInterfaceType="axilite" xd:direction="in" xd:id="21" xd:busInterfaceRef="s_axi_control" xd:aximmMasterRef="m_axi_gmem1" xd:aximmMasterDirection="inout" xd:aximmMasterDataWidth="64"/>
+        <xd:arg xd:name="bias" xd:swRootName="bias" xd:dataWidth="64" xd:offset="0xC8" xd:portInterfaceType="axilite" xd:direction="in" xd:id="22" xd:busInterfaceRef="s_axi_control" xd:aximmMasterRef="m_axi_gmem2" xd:aximmMasterDirection="inout" xd:aximmMasterDataWidth="16"/>
+        <xd:arg xd:name="bias_out" xd:swRootName="bias_out" xd:dataWidth="16" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="out" xd:busInterfaceRef="bias_out"/>
+        <xd:arg xd:name="weight_out" xd:swRootName="weight_out" xd:dataWidth="64" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="out" xd:busInterfaceRef="weight_out"/>
+        <xd:arg xd:name="data_out" xd:swRootName="data_out" xd:dataWidth="64" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="out" xd:busInterfaceRef="data_out"/>
+    </xd:fcnMap>
+</xd:repository>

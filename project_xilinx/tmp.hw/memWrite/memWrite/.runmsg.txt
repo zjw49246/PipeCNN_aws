@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: memWrite
+Log file: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite/memWrite/vitis_hls.log

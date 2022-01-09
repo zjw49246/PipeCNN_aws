@@ -1,0 +1,153 @@
+
+*** Running vitis_hls
+    with args -f memWrite.tcl -messageDb vitis_hls.pb
+
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'zhoujw' on host 'cilantro.eecs.umich.edu' (Linux_x86_64 version 5.11.0-22-generic) on Sun Dec 12 20:57:13 EST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite/memWrite'
+WARNING: [HLS 200-40] Environment variable 'CPLUS_INCLUDE_PATH' is set to :/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/include:/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/include.
+Sourcing Tcl script 'memWrite.tcl'
+INFO: [HLS 200-1510] Running: open_project memWrite 
+INFO: [HLS 200-10] Creating and opening project '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite/memWrite/memWrite'.
+INFO: [HLS 200-1510] Running: set_top memWrite 
+INFO: [HLS 200-1510] Running: add_files /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp -cflags  -g -D VGG16 -I /home/zhoujw/FPGA/PipeCNN/project_xilinx/device  
+INFO: [HLS 200-10] Adding design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution -flow_target vitis solution 
+INFO: [HLS 200-10] Creating and opening solution '/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite/memWrite/memWrite/solution'.
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname memWrite 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 190.047 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'pool_size': /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:63:11
+WARNING: [HLS 207-5301] unused parameter 'pool_stride': /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:64:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.65 seconds. CPU system time: 0.43 seconds. Elapsed time: 3.22 seconds; current allocated memory: 191.767 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' into 'memWrite' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:131:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_132_2' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:132:26) in function 'memWrite' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:132:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_3' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:140:25) in function 'memWrite' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:140:25)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.32 seconds. CPU system time: 0.37 seconds. Elapsed time: 3.7 seconds; current allocated memory: 193.109 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 193.111 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 199.615 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 207.243 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_96_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:91) in function 'memWrite' automatically.
+INFO: [XFORM 203-101] Partitioning array 'buffer' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:88) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'memWrite' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:50)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 235.958 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 234.307 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'memWrite' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'memWrite' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln96_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln149) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'VITIS_LOOP_96_1'
+WARNING: [HLS 200-871] Estimated clock period (3.333ns) exceeds the target (target clock period: 3.333ns, clock uncertainty: 0.89991ns, effective delay budget: 2.43309ns).
+Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'memWrite' consists of the following:	'phi' operation ('out_idx_y') with incoming values : ('out_idx_y', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:191) [112]  (0 ns)
+	'add' operation of DSP[137] ('add_ln149', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149) [135]  (2.34 ns)
+	'mul' operation of DSP[137] ('mul_ln149', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149) [137]  (0.996 ns)
+
+Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 235.325 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 236.490 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'memWrite' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/gmem0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/out_dim1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/out_dim2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/out_dim3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/out_dim1xbatch' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/out_dim1x2xbatch' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/batch_indx_dim1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/batch_indx_dim2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/padd_offset' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/pool_on' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/pool_size' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/pool_stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/top' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/conv_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/conv_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/conv_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'memWrite/conv_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'memWrite' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'out_dim1', 'out_dim2', 'out_dim3', 'out_dim1xbatch', 'out_dim1x2xbatch', 'batch_indx_dim1', 'batch_indx_dim2', 'padd_offset', 'pool_on', 'pool_size', 'pool_stride', 'top' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'am_addmul_16ns_16ns_16ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_30s_30_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_31s_31_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8ns_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_17ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'memWrite'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 239.057 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'memWrite_mul_8ns_8ns_16_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'memWrite_mul_16ns_30s_30_2_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'memWrite_mul_16ns_31s_31_2_1_Multiplier_2'
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.99 seconds. CPU system time: 0.06 seconds. Elapsed time: 2.06 seconds; current allocated memory: 251.052 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for memWrite.
+INFO: [VLOG 209-307] Generating Verilog RTL for memWrite.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 300.03 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 10.55 seconds. CPU system time: 0.9 seconds. Elapsed time: 10.61 seconds; current allocated memory: 251.663 MB.
+INFO: [HLS 200-1510] Running: export_design 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/storage/gefeizuo/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 12 20:57:37 2021...
+INFO: [HLS 200-802] Generated output file memWrite/solution/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 12.62 seconds. CPU system time: 1.39 seconds. Elapsed time: 21.6 seconds; current allocated memory: 256.075 MB.
+HLS completed successfully
+INFO: [HLS 200-112] Total CPU user time: 24.98 seconds. Total CPU system time: 2.96 seconds. Total elapsed time: 33.76 seconds; peak allocated memory: 251.052 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Dec 12 20:57:47 2021...

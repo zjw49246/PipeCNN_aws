@@ -1,0 +1,71 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname memWrite 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 190.078 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'pool_size': /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:63:11
+WARNING: [HLS 207-5301] unused parameter 'pool_stride': /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:64:11
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.5 seconds. CPU system time: 0.54 seconds. Elapsed time: 3.23 seconds; current allocated memory: 191.781 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' (/mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<16>, 0ul, 0ul, 0ul>, 0>::read()' into 'memWrite' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:131:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_132_2' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:132:26) in function 'memWrite' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:132:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_3' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:140:25) in function 'memWrite' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:140:25)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.07 seconds. CPU system time: 0.34 seconds. Elapsed time: 3.41 seconds; current allocated memory: 193.111 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 193.113 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 199.614 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 207.240 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_96_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:91) in function 'memWrite' automatically.
+INFO: [XFORM 203-101] Partitioning array 'buffer' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:88) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'memWrite' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:50)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.28 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 235.951 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 234.318 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'memWrite' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'memWrite' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln96_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=add_ln149) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_96_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 76, loop 'VITIS_LOOP_96_1'
+WARNING: [HLS 200-871] Estimated clock period (3.333ns) exceeds the target (target clock period: 3.333ns, clock uncertainty: 0.89991ns, effective delay budget: 2.43309ns).
+WARNING: [HLS 200-1016] The critical path in module 'memWrite' consists of the following:	'phi' operation ('out_idx_y') with incoming values : ('out_idx_y', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:191) [112]  (0 ns)
+	'add' operation of DSP[137] ('add_ln149', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149) [135]  (2.34 ns)
+	'mul' operation of DSP[137] ('mul_ln149', /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149) [137]  (0.996 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 235.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101]

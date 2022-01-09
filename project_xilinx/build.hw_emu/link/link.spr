@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="link" dir="" srcset="sources_1">
+  <FileSets>
+    <FileSet Name="kernel_memRead" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/xo/memRead/memRead/cpu_sources/memRead.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_coreConv" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/xo/coreConv/coreConv/cpu_sources/coreConv.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_memWrite" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/xo/memWrite/memWrite/cpu_sources/memWrite.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="kernel_maxPool" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/xo/maxPool/maxPool/cpu_sources/maxPool.cpp"/>
+      <Config/>
+    </FileSet>
+    <FileSet Name="sources_1" Type="DesignSrcs">
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs>
+    <Run Id="run_link" Type="Ft101:LinkHwEmuTarget" SrcSet="sources_1" Description="" Dir="run_link">
+      <Strategy>
+        <StratHandle Name="" Flow="Link HW Emulation 2020"/>
+        <Step Id="system_link">
+          <Option Id="ConfigFileStr">/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/syslinkConfig.ini</Option>
+          <Option Id="OptionsStrList"></Option>
+        </Step>
+        <Step Id="cf2sw">
+          <Option Id="OptionsStrList"></Option>
+        </Step>
+        <Step Id="rtd2_system_diagram"/>
+        <Step Id="vpl">
+          <Option Id="ConfigFileStr">/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/vplConfig.ini</Option>
+          <Option Id="OptionsStrList"></Option>
+        </Step>
+        <Step Id="rtdgen"/>
+        <Step Id="xclbinutil">
+          <Option Id="OptionsStrList"></Option>
+        </Step>
+        <Step Id="xclbinutilinfo">
+          <Option Id="OptionsStrList"></Option>
+        </Step>
+        <Step Id="generate_sc_driver"/>
+      </Strategy>
+      <GeneratedRun Dir="run_link" File="gen_run.xml"/>
+    </Run>
+  </Runs>
+</project>

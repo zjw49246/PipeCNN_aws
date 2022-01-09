@@ -1,0 +1,96 @@
+{
+   "xclbin" : {
+      "append_sections" : {
+         "partition_metadata" : {
+            "interfaces" : [
+               {
+                  "interface_uuid" : "7dc1d0e35634b9ee815669cf7799bacdd2c64af1bdf0d8327bc4f1348464a014"
+               },
+               {
+                  "interface_uuid" : "1e9e9ad0ef8701220ec7e69e97f948cd"
+               }
+            ],
+            "schema_version" : {
+               "minor" : "0",
+               "major" : "1"
+            }
+         }
+      }
+   },
+   "raptor2" : {
+      "resources" : {
+         "plram" : {
+            "PLRAM_MEM02" : {
+               "slr" : "SLR0",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "128K"
+            },
+            "PLRAM_MEM01" : {
+               "slr" : "SLR1",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "128K"
+            },
+            "PLRAM_MEM00" : {
+               "slr" : "SLR2",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "128K"
+            }
+         },
+         "ddr4" : {
+            "DDR4_MEM03" : {
+               "slr" : "SLR0",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "16G"
+            },
+            "DDR4_MEM00" : {
+               "slr" : "SLR1",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "16G"
+            },
+            "DDR4_MEM02" : {
+               "slr" : "SLR1",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "16G"
+            },
+            "DDR4_MEM01" : {
+               "slr" : "SLR2",
+               "data_width" : "512",
+               "max_masters" : "15",
+               "peak_memory_bandwidth" : "15258",
+               "size" : "16G"
+            }
+         }
+      },
+      "feature_support" : {
+         "plram" : 3,
+         "ddr4" : 4
+      },
+      "num_compute_units" : 60,
+      "part" : [
+         "xcvu9p-flgb2104-2-i",
+         "xcvu9p-flgb2104-2-i"
+      ],
+      "slrs" : [
+         "SLR0",
+         "SLR1",
+         "SLR2"
+      ],
+      "schema_version" : "1.0"
+   },
+   "revision_control" : {
+      "version" : "1",
+      "release" : "2875742"
+   }
+}

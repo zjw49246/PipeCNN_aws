@@ -1,0 +1,20 @@
+{
+    "activeTask": "system_link",
+    "runComplete": "false",
+    "taskList": [
+        "system_link",
+        "vpl",
+        "vpl.create_project",
+        "vpl.create_bd",
+        "vpl.update_bd",
+        "vpl.generate_target",
+        "vpl.config_hw_emu",
+        "vpl.config_hw_emu.gen_scripts",
+        "vpl.config_hw_emu.compile",
+        "vpl.config_hw_emu.elaborate",
+        "rtdgen",
+        "xclbinutil",
+        "xclbinutilinfo",
+        "generate_sc_driver"
+    ]
+}

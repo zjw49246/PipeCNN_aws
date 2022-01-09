@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="memWrite" dir="">
+  <FileSets>
+    <FileSet Name="kernel_memWrite" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

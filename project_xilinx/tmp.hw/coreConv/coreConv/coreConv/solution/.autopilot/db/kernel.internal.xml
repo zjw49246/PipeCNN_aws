@@ -1,0 +1,25 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="coreConv" language="c" vlnv="xilinx.com:hls:coreConv:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="none" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="BIAS_IN" mode="read_only" dataWidth="16" portType="stream"/>
+      <port name="WEIGHT_IN" mode="read_only" dataWidth="64" portType="stream"/>
+      <port name="DATA_IN" mode="read_only" dataWidth="64" portType="stream"/>
+      <port name="CONV_OUT" mode="write_only" dataWidth="16" portType="stream"/>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x1000" dataWidth="32"/>
+    </ports>
+    <args>
+    <arg id="0" name="output_num" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x4" offset="0x10" size="0x4" type="unsigned int"/>
+    <arg id="1" name="conv_loop_cnt" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x4" offset="0x18" size="0x4" type="unsigned int"/>
+    <arg id="2" name="contol" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x4" offset="0x20" size="0x4" type="unsigned int"/>
+    <arg id="3" name="frac_w" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x28" size="0x4" type="unsigned int"/>
+    <arg id="4" name="frac_din" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x30" size="0x4" type="unsigned int"/>
+    <arg id="5" name="frac_dout" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x38" size="0x4" type="unsigned int"/>
+      <arg id="6" name="bias_in" addressQualifier="4" port="BIAS_IN" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0, 0, 0&gt;, 0&gt;&amp;" memSize="0x2" origName="bias_in" origUse="variable"/>
+      <arg id="7" name="weight_in" addressQualifier="4" port="WEIGHT_IN" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;64&gt;, 0, 0, 0&gt;, 0&gt;&amp;" memSize="0x8" origName="weight_in" origUse="variable"/>
+      <arg id="8" name="data_in" addressQualifier="4" port="DATA_IN" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;64&gt;, 0, 0, 0&gt;, 0&gt;&amp;" memSize="0x8" origName="data_in" origUse="variable"/>
+      <arg id="9" name="conv_out" addressQualifier="4" port="CONV_OUT" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0, 0, 0&gt;, 0&gt;&amp;" memSize="0x2" origName="conv_out" origUse="variable"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

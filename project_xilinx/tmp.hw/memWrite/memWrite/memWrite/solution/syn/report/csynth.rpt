@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'memWrite'
+================================================================
++ General Information: 
+    * Date:           Sun Dec 12 20:57:24 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        memWrite
+    * Solution:       solution (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |       Modules      |  Issue |       | Latency | Latency| Iteration|         | Trip |          |         |         |            |            |     |
+    |       & Loops      |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |+ memWrite          |  Timing|   0.90|        -|       -|         -|        -|     -|        no|  2 (~0%)|  4 (~0%)|  2581 (~0%)|  2663 (~0%)|    -|
+    | o VITIS_LOOP_96_1  |       -|  -2.43|        -|       -|        76|        1|     -|       yes|        -|        -|           -|           -|    -|
+    +--------------------+--------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+

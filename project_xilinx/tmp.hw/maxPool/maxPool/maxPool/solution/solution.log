@@ -1,0 +1,76 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_offset=slave
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-1510] Running: set_part xcvu9p-flgb2104-2-i 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-2-i'
+INFO: [HLS 200-1510] Running: create_clock -period 300MHz -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+INFO: [HLS 200-1510] Running: config_rtl -kernel_profile 
+INFO: [HLS 200-1510] Running: config_dataflow -strict_mode warning 
+INFO: [HLS 200-1510] Running: config_debug -enable 
+INFO: [HLS 200-1510] Running: config_export -disable_deadlock_detection=true 
+INFO: [HLS 200-1510] Running: config_rtl -m_axi_conservative_mode=1 
+WARNING: [HLS 200-483] The 'config_rtl -m_axi_conservative_mode' command is deprecated and will be removed in a future release. Use 'config_interface -m_axi_conservative_mode' as its replacement.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_auto_max_ports=0 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -ipname maxPool 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 190.046 MB.
+INFO: [HLS 200-10] Analyzing design file '/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.56 seconds. CPU system time: 0.44 seconds. Elapsed time: 3.17 seconds; current allocated memory: 191.805 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:176:23)
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195:44)
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:190:23)
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185:44)
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:182:36)
+INFO: [HLS 214-131] Inlining function 'pool_max(char, char)' into 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:177:23)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_155_3' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:155:23) in function 'maxPool' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:155:23)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_201_4' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:201:25) in function 'maxPool' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:201:25)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_201_4' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:201:25) in function 'maxPool' completely with a factor of 2 (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:201:25)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.2 seconds. CPU system time: 0.38 seconds. Elapsed time: 3.58 seconds; current allocated memory: 193.510 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 193.511 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 195.337 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 194.555 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_144_2' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:110) in function 'maxPool' automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'maxPool' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:64)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.44 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 215.896 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_125_1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:110:9) in function 'maxPool' the outer loop is not a perfect loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'row_reg0' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:179:34)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_reg1' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:182:34)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool_final' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185:42)
+INFO: [HLS 200-472] Inferring partial write operation for 'row_reg0' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:192:34)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool_final' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195:42)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 210.760 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'maxPool' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln146) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=tmp2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln240) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_144_2'.
+WARNING: [HLS 200-885] Unable to schedule bus request on port 'gmem0' (/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 150, loop 'VITIS_LOOP_144_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.45 seconds. CPU system time: 0 seconds. Elapsed time: 0.46 seconds; current allocated memory: 212.733 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.76 seconds; current allocated memory: 215.466 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool' 

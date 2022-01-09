@@ -1,0 +1,187 @@
+Begin Function 'coreConv'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_7
+local empty_39 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_39 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_39_reg_426[31:0] lv
+
+local empty_40 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_40 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_40_reg_440[31:0] lv
+
+local empty_41 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_41 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_41_reg_454[31:0] lv
+
+local empty_42 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_42 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_42_reg_468[31:0] lv
+
+local empty_43 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_43_reg_482[31:0] lv
+
+local empty_45 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_45 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_45_reg_508[31:0] lv
+
+local empty_46 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_46 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_46_reg_522[31:0] lv
+
+local empty_47 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_47 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_47_reg_536[31:0] lv
+
+local empty_48 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_48 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_48_reg_550[31:0] lv
+
+local empty_49 <phi_144> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+empty_49 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: empty_49_reg_564[31:0] lv
+
+local conv_acc <add_144> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+lane_accum /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: conv_acc_reg_1674[31:0] lv
+
+local conv_acc_2 <add_144> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144>
+lane_accum /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:144
+reg: conv_acc_2_reg_1679[31:0] lv
+
+local add_ln170_3 <add_170> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170>
+add_ln170_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170
+reg: add_ln170_3_reg_1684[31:0] lv
+
+local add_ln170_8 <add_170> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170>
+add_ln170_8 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170
+reg: add_ln170_8_reg_1689[31:0] lv
+
+# ST_8
+local conv_acc_1 <add_170> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170>
+conv_acc /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170
+reg: conv_acc_1_reg_1694[31:0] lv
+
+local tmp_1 <bitselect_175> <integer> <> 'bitselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:175>
+tmp_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:175
+reg: tmp_1_reg_1699[0:0] lv
+
+local conv_acc_3 <add_170> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170>
+conv_acc /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:170
+reg: conv_acc_3_reg_1704[31:0] lv
+
+local tmp_4 <bitselect_175> <integer> <> 'bitselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:175>
+tmp_4 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:175
+reg: tmp_4_reg_1709[0:0] lv
+
+# ST_9
+local conv_with_rnd_bit <add_181> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:181>
+conv_with_rnd_bit /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:181
+reg: conv_with_rnd_bit_reg_1714[31:0] lv
+
+local add_ln94 <add_94> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:94>
+add_ln94 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:94
+reg: add_ln94_reg_1719[8:0] lv
+
+local tmp_2 <partselect_184> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:184>
+tmp_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:184
+reg: tmp_2_reg_1724[23:0] lv
+
+local conv_with_rnd_bit_1 <add_181> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:181>
+conv_with_rnd_bit /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:181
+reg: conv_with_rnd_bit_1_reg_1729[31:0] lv
+
+local add_ln94_1 <add_94> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:94>
+add_ln94_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:94
+reg: add_ln94_1_reg_1734[8:0] lv
+
+local tmp_5 <partselect_184> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:184>
+tmp_5 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:184
+reg: tmp_5_reg_1739[23:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_4
+local k <> <integer> <Phi> 'phi' <>
+k /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:101
+reg: k_reg_271[31:0] lv
+
+local icmp_ln101 <icmp_101> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:101>
+icmp_ln101 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:101
+reg: icmp_ln101_reg_1552[0:0] lv
+
+local icmp_ln104 <icmp_104> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:104>
+icmp_ln104 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:104
+reg: icmp_ln104_reg_1556[0:0] lv
+
+local mac_data_lane <> <integer> <> 'trunc' <>
+mac_data_lane /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_data_lane_reg_1560[7:0] lv
+
+local mac_weight_lane <> <integer> <> 'trunc' <>
+mac_weight_lane /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_weight_lane_reg_1565[7:0] lv
+
+local mac_data_lane_1 <> <integer> <> 'partselect' <>
+mac_data_lane_1 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_data_lane_1_reg_1570[7:0] lv
+
+local mac_weight_lane_1 <> <integer> <> 'partselect' <>
+mac_weight_lane_1 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_weight_lane_1_reg_1575[7:0] lv
+
+local mac_data_lane_4 <> <integer> <> 'partselect' <>
+mac_data_lane_4 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_data_lane_4_reg_1580[7:0] lv
+
+local mac_weight_lane_4 <> <integer> <> 'partselect' <>
+mac_weight_lane_4 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_weight_lane_4_reg_1585[7:0] lv
+
+local mac_data_lane_5 <> <integer> <> 'partselect' <>
+mac_data_lane_5 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_data_lane_5_reg_1590[7:0] lv
+
+local mac_weight_lane_5 <> <integer> <> 'partselect' <>
+mac_weight_lane_5 /mnt/storage/gefeizuo/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_int_ref.h:708
+reg: mac_weight_lane_5_reg_1595[7:0] lv
+
+local icmp_ln163 <icmp_163> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:163>
+icmp_ln163 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:163
+reg: icmp_ln163_reg_1640[0:0] lv
+
+# ST_5
+local bias_load <load_192> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:192>
+bias_load /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:192
+reg: bias_load_reg_1644[7:0] lv
+
+local bias_1_load <load_192> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:192>
+bias_1_load /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:192
+reg: bias_1_load_reg_1649[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state3)
+# ST_3
+local empty <> <integer> <> 'trunc' <>
+reg: empty_reg_1513[0:0] lv
+
+local mul <> <integer> <Arithmetic><MultiCycle> 'mul' <>
+reg: mul_reg_1519[31:0] lv
+
+local sub113 <> <integer> <Arithmetic> 'add' <>
+reg: sub113_reg_1524[31:0] lv
+
+local sub151_cast <> <integer> <> 'sext' <>
+reg: sub151_cast_reg_1529[31:0] lv
+
+local neg <> <integer> <Logic> 'xor' <>
+reg: neg_reg_1535[31:0] lv
+
+local sext_ln101 <sext_101> <integer> <> 'sext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:101>
+sext_ln101 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp:101
+reg: sext_ln101_reg_1541[31:0] lv
+
+
+End Function 'coreConv'
+

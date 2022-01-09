@@ -1,0 +1,13 @@
+Tue Dec 14 21:05:44 2021: Server was asked to start on port: '43409'
+Tue Dec 14 21:05:44 2021: Server is using token UUID: '9857d9f6-bdd5-42b8-8113-44ab0aa5cb9e'
+Tue Dec 14 21:05:44 2021: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Tue Dec 14 21:05:44 2021: Attempting to start server on port '43409'
+Tue Dec 14 21:05:44 2021: XCD main fifo: created main fifo '/tmp/xcdmain9857d9f6-bdd5-42b8-8113-44ab0aa5cb9e', fd read = 13
+Tue Dec 14 21:05:44 2021: Running Dispatch Server
+Tue Dec 14 21:05:44 2021: Version 2.1.0
+Tue Dec 14 21:05:54 2021: Dispatch Server: Accepted socket connection from client
+Tue Dec 14 21:05:54 2021: EXCHANGE_TOKEN received, server token: 9857d9f6-bdd5-42b8-8113-44ab0aa5cb9e, passed token: 9857d9f6-bdd5-42b8-8113-44ab0aa5cb9e
+Tue Dec 14 21:05:54 2021: SESSION_MGR: creating session with session uuid: '76f36089-3b0e-4eba-bfb8-302af5c87fd6' and name 'v++_link_conv'
+Tue Dec 14 21:05:54 2021: GUIDANCE_SMGR: creating guidance session with uuid: '76f36089-3b0e-4eba-bfb8-302af5c87fd6' and name 'v++_link_conv'
+Tue Dec 14 21:06:10 2021: SESSION_MGR: closing session for UUID '76f36089-3b0e-4eba-bfb8-302af5c87fd6' with name 'v++_link_conv'
+Tue Dec 14 21:06:10 2021: GUIDANCE_SMGR: closing session for UUID '76f36089-3b0e-4eba-bfb8-302af5c87fd6' with name 'v++_link_conv'

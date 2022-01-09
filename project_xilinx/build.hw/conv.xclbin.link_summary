@@ -1,0 +1,295 @@
+<ENTRY>
+{
+ "thisFile": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/conv.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Dec 12 20:58:55 2021",
+ "timestampMillis": "1639360735722",
+ "buildStep": {
+  "cmdId": "3f2c9129-a40b-4a06-b6d6-2b863f8e8611",
+  "name": "v++",
+  "logFile": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/link.steps.log",
+  "commandLine": "/mnt/storage/gefeizuo/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/v++ --xp param:compiler.lockFlowCritSlackThreshold=0 --xp vivado_param:hd.routingContainmentAreaExpansion=true --xp vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1 --xp vivado_param:bitstream.enablePR=4123 --xp vivado_param:physynth.ultraRAMOptOutput=false --xp vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1} --xp vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --save-temps -g --profile_kernel data:all:all:all --profile_kernel stall:all:all:all --define VGG16 --temp_dir ./build.hw -l -obuild.hw/conv.xclbin tmp.hw/memRead.xo tmp.hw/coreConv.xo tmp.hw/memWrite.xo tmp.hw/maxPool.xo --config config_sp.u50 ",
+  "args": [
+   "--xp",
+   "param:compiler.lockFlowCritSlackThreshold=0",
+   "--xp",
+   "vivado_param:hd.routingContainmentAreaExpansion=true",
+   "--xp",
+   "vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1",
+   "--xp",
+   "vivado_param:bitstream.enablePR=4123",
+   "--xp",
+   "vivado_param:physynth.ultraRAMOptOutput=false",
+   "--xp",
+   "vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}",
+   "--xp",
+   "vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}",
+   "-t",
+   "hw",
+   "--platform",
+   "/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "--save-temps",
+   "-g",
+   "--profile_kernel",
+   "data:all:all:all",
+   "--profile_kernel",
+   "stall:all:all:all",
+   "--define",
+   "VGG16",
+   "--temp_dir",
+   "./build.hw",
+   "-l",
+   "-obuild.hw/conv.xclbin",
+   "tmp.hw/memRead.xo",
+   "tmp.hw/coreConv.xo",
+   "tmp.hw/memWrite.xo",
+   "tmp.hw/maxPool.xo",
+   "--config",
+   "config_sp.u50"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/config_sp.u50",
+    "content": "kernel_frequency=0:300\n\n[connectivity]\n#sp=\u003ccompute_unit_name\u003e.\u003cinterface_name\u003e:\u003csptag[min:max]\u003e\n#sp=DataLoad_1.A_in:HBM[0]\n#sp=DataLoad_1.C_in:HBM[2]\n#sp=DataStore_1.B_out:HBM[1]\n#sp=DataStore_1.D_out:HBM[3]\n\n#stream_connect=\u003ccu_name\u003e.\u003coutput_port\u003e:\u003ccu_name\u003e.\u003cinput_port\u003e:[\u003cfifo_depth\u003e]\nstream_connect=memRead_1.bias_out:coreConv_1.bias_in\nstream_connect=memRead_1.weight_out:coreConv_1.weight_in\nstream_connect=memRead_1.data_out:coreConv_1.data_in\n##VGG connection\n#stream_connect=coreConv_1.conv_out:memWrite_1.conv_in\n##ResNet connection\nstream_connect=coreConv_1.conv_out:batchNorm_1.conv_in\nstream_connect=coreConv_1.bypass_out:memWrite_1.bypass_in\nstream_connect=batchNorm_1.bn_out:memWrite_1.bn_in\n\n\n##used for pipelined pooling\n#stream_connect=memWrite_1.pool_sync_out:maxPool_1.pool_sync_in\n\n#nk=\u003ckernal_name\u003e:#:\u003ccu_name1\u003e.\u003ccu_name2\u003e...\u003ccu_name#\u003e\n#nk=DataLoad:1:DataLoad_1\n#nk=DataStore:1:DataStore_1\n\n[vivado]\n##dump all waveforms\nprop=fileset.sim_1.xsim.elaborate.debug_level=all"
+   }
+  ],
+  "cwd": "/home/zhoujw/FPGA/PipeCNN/project_xilinx"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 12 20:58:55 2021",
+ "timestampMillis": "1639360735723",
+ "status": {
+  "cmdId": "3f2c9129-a40b-4a06-b6d6-2b863f8e8611",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Dec 12 20:59:00 2021",
+ "timestampMillis": "1639360740054",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "conv",
+    "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/conv.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "memRead",
+     "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/xo/memRead/memRead/cpu_sources/memRead.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "memRead_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "coreConv",
+     "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/coreConv.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/xo/coreConv/coreConv/cpu_sources/coreConv.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "coreConv_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "memWrite",
+     "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/xo/memWrite/memWrite/cpu_sources/memWrite.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "memWrite_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "maxPool",
+     "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/maxPool.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/xo/maxPool/maxPool/cpu_sources/maxPool.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "maxPool_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Dec 12 20:59:00 2021",
+ "timestampMillis": "1639360740184",
+ "buildStep": {
+  "cmdId": "e8834fd2-24d1-4c01-9179-149aa4d8e35d",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/coreConv.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/maxPool.xo -keep --config /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/syslinkConfig.ini --xpfm /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --target hw --output_dir /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int --temp_dir /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memRead.xo",
+   "--xo",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/coreConv.xo",
+   "--xo",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/memWrite.xo",
+   "--xo",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw/maxPool.xo",
+   "-keep",
+   "--config",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int",
+   "--temp_dir",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/link/int/syslinkConfig.ini",
+    "content": "sc=memRead_1.bias_out:coreConv_1.bias_in\nsc=memRead_1.weight_out:coreConv_1.weight_in\nsc=memRead_1.data_out:coreConv_1.data_in\nsc=coreConv_1.conv_out:batchNorm_1.conv_in\nsc=coreConv_1.bypass_out:memWrite_1.bypass_in\nsc=batchNorm_1.bn_out:memWrite_1.bn_in\n\n"
+   }
+  ],
+  "cwd": "/home/zhoujw/FPGA/PipeCNN/project_xilinx"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 12 20:59:00 2021",
+ "timestampMillis": "1639360740185",
+ "status": {
+  "cmdId": "e8834fd2-24d1-4c01-9179-149aa4d8e35d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 12 20:59:11 2021",
+ "timestampMillis": "1639360751084",
+ "status": {
+  "cmdId": "e8834fd2-24d1-4c01-9179-149aa4d8e35d",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec 12 20:59:11 2021",
+ "timestampMillis": "1639360751311",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/reports/link/v++_link_conv_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec 12 20:59:11 2021",
+ "timestampMillis": "1639360751312",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/v++_link_conv_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Dec 12 20:59:11 2021",
+ "timestampMillis": "1639360751313",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Dec 12 20:59:11 2021",
+ "timestampMillis": "1639360751315",
+ "status": {
+  "cmdId": "3f2c9129-a40b-4a06-b6d6-2b863f8e8611",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>

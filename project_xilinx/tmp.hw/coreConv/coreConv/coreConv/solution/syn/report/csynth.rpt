@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'coreConv'
+================================================================
++ General Information: 
+    * Date:           Sun Dec 12 20:56:32 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        coreConv
+    * Solution:       solution (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+-------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |       Modules       | Issue|       | Latency | Latency| Iteration|         | Trip |          |      |         |            |            |     |
+    |       & Loops       | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +---------------------+------+-------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ coreConv           |     -|  -0.14|        -|       -|         -|        -|     -|        no|     -|  4 (~0%)|  2879 (~0%)|  2392 (~0%)|    -|
+    | o VITIS_LOOP_101_1  |     -|  -2.43|        -|       -|         8|        1|     -|       yes|     -|        -|           -|           -|    -|
+    +---------------------+------+-------+---------+--------+----------+---------+------+----------+------+---------+------------+------------+-----+
+

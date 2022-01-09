@@ -1,0 +1,63 @@
+INFO: [v++ 60-897] Reading --xp value from platform: param:compiler.lockFlowCritSlackThreshold=0
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_param:hd.routingContainmentAreaExpansion=true
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_param:hd.supportClockNetCrossDiffReconfigurablePartitions=1
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_param:bitstream.enablePR=4123
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_param:physynth.ultraRAMOptOutput=false
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MAX_URAM_CASCADE_HEIGHT}={1}
+INFO: [v++ 60-897] Reading --xp value from platform: vivado_param:synth.elaboration.rodinMoreOptions={rt::set_parameter disableOregPackingUram true}
+WARNING: [v++ 60-642] Invalid or deprecated parameter name: compiler.lockFlowCritSlackThreshold
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/reports/link
+	Log files: /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/conv.xclbin.link_summary, at Tue Dec 14 21:05:54 2021
+INFO: [v++ 60-1316] Initiating connection to rulecheck server, at Tue Dec 14 21:05:54 2021
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/reports/link/v++_link_conv_guidance.html', at Tue Dec 14 21:05:55 2021
+INFO: [v++ 60-895]   Target platform: /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/hw/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa'
+INFO: [v++ 74-74] Compiler Version string: 2020.2
+INFO: [v++ 60-629] Linking for hardware emulation target
+INFO: [v++ 60-423]   Target device: xilinx_aws-vu9p-f1_shell-v04261818_201920_2
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [21:05:58] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/memRead.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/memWrite.xo --xo /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/maxPool.xo -keep --config /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int/syslinkConfig.ini --xpfm /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --target emu --output_dir /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/int --temp_dir /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/run_link
+INFO: [SYSTEM_LINK 60-1316] Initiating connection to rulecheck server, at Tue Dec 14 21:05:59 2021
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/memRead.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/memWrite.xo
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/maxPool.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [21:06:00] build_xd_ip_db started: /mnt/storage/gefeizuo/Xilinx/Vitis/2020.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/emu/xilinx_aws-vu9p-f1_shell-v04261818_201920_1_emu.hpfm -clkid 0 -ip /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/iprepo/xilinx_com_hls_coreConv_1_0,coreConv -ip /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/iprepo/xilinx_com_hls_maxPool_1_0,maxPool -ip /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/iprepo/xilinx_com_hls_memWrite_1_0,memWrite -ip /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/iprepo/xilinx_com_hls_memRead_1_0,memRead -o /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [21:06:08] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1612.207 ; gain = 0.000 ; free physical = 168111 ; free virtual = 412272
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [21:06:08] cfgen started: /mnt/storage/gefeizuo/Xilinx/Vitis/2020.2/bin/cfgen  -sc memRead_1.bias_out:coreConv_1.bias_in -sc memRead_1.weight_out:coreConv_1.weight_in -sc memRead_1.data_out:coreConv_1.data_in -sc coreConv_1.conv_out:batchNorm_1.conv_in -sc coreConv_1.bypass_out:memWrite_1.bypass_in -sc batchNorm_1.bn_out:memWrite_1.bn_in -dmclkid 0 -r /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: coreConv, num: 1  {coreConv_1}
+INFO: [CFGEN 83-0]   kernel: maxPool, num: 1  {maxPool_1}
+INFO: [CFGEN 83-0]   kernel: memRead, num: 1  {memRead_1}
+INFO: [CFGEN 83-0]   kernel: memWrite, num: 1  {memWrite_1}
+INFO: [CFGEN 83-0] Stream Specs: 
+INFO: [CFGEN 83-0]   memRead_1.bias_out => coreConv_1.bias_in
+INFO: [CFGEN 83-0]   memRead_1.weight_out => coreConv_1.weight_in
+INFO: [CFGEN 83-0]   memRead_1.data_out => coreConv_1.data_in
+INFO: [CFGEN 83-0]   coreConv_1.conv_out => batchNorm_1.conv_in
+INFO: [CFGEN 83-0]   coreConv_1.bypass_out => memWrite_1.bypass_in
+INFO: [CFGEN 83-0]   batchNorm_1.bn_out => memWrite_1.bn_in
+ERROR: [CFGEN 83-2291] --sc tag applied with invalid slave kernel instance: batchNorm_1
+ERROR: [CFGEN 83-2284] --sc tag applied to nonexistant port coreConv_1.bypass_out
+ERROR: [CFGEN 83-2284] --sc tag applied to nonexistant port memWrite_1.bypass_in
+ERROR: [CFGEN 83-2291] --sc tag applied with invalid master kernel instance: batchNorm_1
+ERROR: [CFGEN 83-2284] --sc tag applied to nonexistant port memWrite_1.bn_in
+ERROR: [CFGEN 83-2298] Exiting due to previous error
+ERROR: [SYSTEM_LINK 82-36] [21:06:10] cfgen failed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1612.207 ; gain = 0.000 ; free physical = 168109 ; free virtual = 412271
+ERROR: [SYSTEM_LINK 82-62] Error generating design file for /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/cfgraph/cfgen_cfgraph.xml, command: /mnt/storage/gefeizuo/Xilinx/Vitis/2020.2/bin/cfgen  -sc memRead_1.bias_out:coreConv_1.bias_in -sc memRead_1.weight_out:coreConv_1.weight_in -sc memRead_1.data_out:coreConv_1.data_in -sc coreConv_1.conv_out:batchNorm_1.conv_in -sc coreConv_1.bypass_out:memWrite_1.bypass_in -sc batchNorm_1.bn_out:memWrite_1.bn_in -dmclkid 0 -r /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/zhoujw/FPGA/PipeCNN/project_xilinx/build.hw_emu/link/sys_link/cfgraph/cfgen_cfgraph.xml
+ERROR: [SYSTEM_LINK 82-96] Error applying explicit connections to the system connectivity graph
+ERROR: [SYSTEM_LINK 82-79] Unable to create system connectivity graph
+INFO: [v++ 60-1442] [21:06:10] Run run_link: Step system_link: Failed
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1546.297 ; gain = 0.000 ; free physical = 168146 ; free virtual = 412308
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking

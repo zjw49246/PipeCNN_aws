@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="memRead" xd:componentRef="memRead" xd:initiationInterval="x" xd:clockPeriod="3.333" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(bottom)" xd:originalName="bottom" xd:direction="inout" xd:interfaceRef="m_axi_gmem0" xd:busTypeRef="aximm" xd:dataWidth="1" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(weights)" xd:originalName="weights" xd:direction="inout" xd:interfaceRef="m_axi_gmem1" xd:busTypeRef="aximm" xd:dataWidth="1" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(bias)" xd:originalName="bias" xd:direction="inout" xd:interfaceRef="m_axi_gmem2" xd:busTypeRef="aximm" xd:dataWidth="1" xd:bufferDirection="in"/>
+  <xd:arg xd:name="data_dim1" xd:originalName="data_dim1" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_dim2" xd:originalName="data_dim2" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_dim1xdim2" xd:originalName="data_dim1xdim2" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim1" xd:originalName="weight_dim1" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim2" xd:originalName="weight_dim2" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim3" xd:originalName="weight_dim3" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim4_div_lane" xd:originalName="weight_dim4_div_lane" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim1x2" xd:originalName="weight_dim1x2" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_dim1x2x3" xd:originalName="weight_dim1x2x3" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_x" xd:originalName="conv_x" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="stride" xd:originalName="stride" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="padding" xd:originalName="padding" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="split" xd:originalName="split" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="group_num_x" xd:originalName="group_num_x" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x78" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="group_num_y" xd:originalName="group_num_y" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x80" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="group_rem_size_x" xd:originalName="group_rem_size_x" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x88" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="group_rem_size_xyz" xd:originalName="group_rem_size_xyz" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x90" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="win_size_x" xd:originalName="win_size_x" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x98" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="win_size_y" xd:originalName="win_size_y" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xA0" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="win_size_xyz" xd:originalName="win_size_xyz" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xA8" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="bottom" xd:originalName="bottom" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem0" xd:dataWidth="64" xd:offset="0xB0" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="weights" xd:originalName="weights" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem1" xd:dataWidth="64" xd:offset="0xBC" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="bias" xd:originalName="bias" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem2" xd:dataWidth="64" xd:offset="0xC8" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="bias_out.data" xd:originalName="bias_out" xd:direction="out" xd:interfaceRef="bias_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_out.keep" xd:originalName="bias_out" xd:direction="out" xd:interfaceRef="bias_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_out.strb" xd:originalName="bias_out" xd:direction="out" xd:interfaceRef="bias_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_out.last" xd:originalName="bias_out" xd:direction="out" xd:interfaceRef="bias_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_out.data" xd:originalName="weight_out" xd:direction="out" xd:interfaceRef="weight_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_out.keep" xd:originalName="weight_out" xd:direction="out" xd:interfaceRef="weight_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_out.strb" xd:originalName="weight_out" xd:direction="out" xd:interfaceRef="weight_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_out.last" xd:originalName="weight_out" xd:direction="out" xd:interfaceRef="weight_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.data" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.keep" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.strb" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.last" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="9850" xd:FF="13332" xd:BRAM="72" xd:DSP="23"/>
+</xd:acceleratorMap>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd">
+    <xd:fcnMap xd:fcnName="coreConv" xd:type="hls_opencl" xd:clockId="0" xd:flow="explicit" xd:componentRef="coreConv">
+        <xd:interrupt xd:busInterfaceRef="interrupt"/>
+        <xd:ctrlReg xd:busInterface="s_axi_control" xd:portInterfaceType="axilite" xd:name="control" xd:type="ap_ctrl_chain" xd:offset="0x0"/>
+        <xd:arg xd:name="output_num" xd:swRootName="output_num" xd:dataWidth="32" xd:offset="0x10" xd:portInterfaceType="axilite" xd:direction="in" xd:id="0" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="conv_loop_cnt" xd:swRootName="conv_loop_cnt" xd:dataWidth="32" xd:offset="0x18" xd:portInterfaceType="axilite" xd:direction="in" xd:id="1" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="contol" xd:swRootName="contol" xd:dataWidth="32" xd:offset="0x20" xd:portInterfaceType="axilite" xd:direction="in" xd:id="2" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="frac_w" xd:swRootName="frac_w" xd:dataWidth="8" xd:offset="0x28" xd:portInterfaceType="axilite" xd:direction="in" xd:id="3" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="frac_din" xd:swRootName="frac_din" xd:dataWidth="8" xd:offset="0x30" xd:portInterfaceType="axilite" xd:direction="in" xd:id="4" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="frac_dout" xd:swRootName="frac_dout" xd:dataWidth="8" xd:offset="0x38" xd:portInterfaceType="axilite" xd:direction="in" xd:id="5" xd:busInterfaceRef="s_axi_control"/>
+        <xd:arg xd:name="bias_in" xd:swRootName="bias_in" xd:dataWidth="16" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="in" xd:busInterfaceRef="bias_in"/>
+        <xd:arg xd:name="weight_in" xd:swRootName="weight_in" xd:dataWidth="64" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="in" xd:busInterfaceRef="weight_in"/>
+        <xd:arg xd:name="data_in" xd:swRootName="data_in" xd:dataWidth="64" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="in" xd:busInterfaceRef="data_in"/>
+        <xd:arg xd:name="conv_out" xd:swRootName="conv_out" xd:dataWidth="16" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="out" xd:busInterfaceRef="conv_out"/>
+    </xd:fcnMap>
+</xd:repository>

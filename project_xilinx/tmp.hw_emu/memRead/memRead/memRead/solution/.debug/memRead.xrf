@@ -1,0 +1,683 @@
+Begin Function 'memRead'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_8
+local win_itm_y_1 <phi_124> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+select_ln124_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: win_itm_y_1_reg_990[7:0] lv
+
+local win_itm_x_1 <> <integer> <Phi> 'phi' <>
+win_itm_x_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:125
+reg: win_itm_x_1_reg_1002[7:0] lv
+
+local select_ln123_5 <select_123> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+select_ln123_5 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: select_ln123_5_reg_4683[0:0] lv
+
+local win_itm_y_1_2 <add_124> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+win_itm_y_1_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: win_itm_y_1_2_reg_4688[7:0] lv
+
+local select_ln124 <select_124> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+select_ln124 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: select_ln124_reg_4693[7:0] lv
+
+local select_ln124_2 <select_124> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+select_ln124_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: select_ln124_2_reg_4699[7:0] lv
+
+local sub_ln124 <sub_124> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+sub_ln124 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: sub_ln124_reg_4704[8:0] lv
+
+local or_ln132_2 <or_132> <integer> <Logic> 'or' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:132>
+or_ln132_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:132
+reg: or_ln132_2_reg_4709[0:0] lv
+
+# ST_9
+local sub_ln123 <sub_123> <integer> <Arithmetic><MultiCycle> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+sub_ln123 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: sub_ln123_reg_4718[30:0] lv
+
+local add_ln133 <add_133> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+add_ln133 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: add_ln133_reg_4728[16:0] lv
+
+# ST_10
+local gmem0_addr <getelementptr_133> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+gmem0_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: gmem0_addr_reg_4733[63:0] lv
+
+# ST_12
+local add_ln143 <add_143> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:143>
+add_ln143 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:143
+reg: add_ln143_reg_4739[12:0] lv
+
+# ST_81
+local data_vec <trunc_133> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: data_vec_reg_4744[7:0] lv
+
+local data_vec_1 <partselect_133> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: data_vec_1_reg_4749[7:0] lv
+
+local data_vec_2 <partselect_133> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: data_vec_2_reg_4754[7:0] lv
+
+local data_vec_3 <partselect_133> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:133
+reg: data_vec_3_reg_4759[7:0] lv
+
+# ST_91
+local load_weight_flag <> <integer> <Phi> 'phi' <>
+load_weight_flag /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: load_weight_flag_reg_1112[7:0] lv
+
+local gp_num_y <> <integer> <Phi> 'phi' <>
+gp_num_y /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_y_reg_1123[15:0] lv
+
+local out_idx_z <> <integer> <Phi> 'phi' <>
+out_idx_z /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: out_idx_z_reg_1134[15:0] lv
+
+local icmp_ln262 <icmp_262> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:262>
+icmp_ln262 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:262
+reg: icmp_ln262_reg_5123[0:0] lv
+
+local output_idx_dim1_load_1 <load_263> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263>
+output_idx_dim1_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263
+reg: output_idx_dim1_load_1_reg_5127[7:0] lv
+
+local output_idx_dim2_load_1 <load_263> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263>
+output_idx_dim2_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263
+reg: output_idx_dim2_load_1_reg_5133[7:0] lv
+
+local gp_item_idx_x_load_1 <load_269> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269>
+gp_item_idx_x_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269
+reg: gp_item_idx_x_load_1_reg_5154[7:0] lv
+
+local icmp_ln269 <icmp_269> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269>
+icmp_ln269 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269
+reg: icmp_ln269_reg_5159[0:0] lv
+
+local output_idx_dim1_load_2 <load_271> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271>
+output_idx_dim1_load_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271
+reg: output_idx_dim1_load_2_reg_5163[7:0] lv
+
+local output_idx_dim2_load_2 <load_271> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271>
+output_idx_dim2_load_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271
+reg: output_idx_dim2_load_2_reg_5168[7:0] lv
+
+local icmp_ln271 <icmp_271> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271>
+icmp_ln271 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271
+reg: icmp_ln271_reg_5173[0:0] lv
+
+local gmem2_addr <getelementptr_273> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:273>
+gmem2_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:273
+reg: gmem2_addr_reg_5177[63:0] lv
+
+# ST_92
+local trunc_ln263_1 <partselect_263> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263>
+trunc_ln263_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263
+reg: trunc_ln263_1_reg_5214[29:0] lv
+
+# ST_93
+local data_offset <> <integer> <Phi> 'phi' <>
+data_offset /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192
+reg: data_offset_reg_1155[15:0] lv
+
+local out_idx_z_winbuf <> <integer> <Phi> 'phi' <>
+out_idx_z_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: out_idx_z_winbuf_reg_1166[15:0] lv
+
+local data_offset_2 <select_192> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192>
+data_offset /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192
+reg: data_offset_2_reg_5224[15:0] lv
+
+local and_ln228_2 <and_228> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:228>
+and_ln228_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:228
+reg: and_ln228_2_reg_5230[0:0] lv
+
+local sub_ln229_1 <sub_229> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+sub_ln229_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: sub_ln229_1_reg_5239[15:0] lv
+
+local mul_ln239 <mul_239> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+mul_ln239 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: mul_ln239_reg_5244[12:0] lv
+
+# ST_94
+local mul_ln264 <mul_264> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+mul_ln264 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: mul_ln264_reg_5259[12:0] lv
+
+local mul_ln287 <mul_287> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+mul_ln287 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: mul_ln287_reg_5269[12:0] lv
+
+local mul_ln301 <mul_301> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+mul_ln301 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: mul_ln301_reg_5274[12:0] lv
+
+# ST_95
+local add_ln263_2 <add_263> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263>
+add_ln263_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263
+reg: add_ln263_2_reg_5279[30:0] lv
+
+# ST_96
+local trunc_ln3 <partselect_263> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263>
+trunc_ln3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:263
+reg: trunc_ln3_reg_5294[60:0] lv
+
+local zext_ln271_1 <zext_271> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271>
+zext_ln271_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:271
+reg: zext_ln271_1_reg_5299[12:0] lv
+
+# ST_97
+local add_ln229_2 <add_229> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+add_ln229_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: add_ln229_2_reg_5305[31:0] lv
+
+local add_ln239_1 <add_239> <integer> <Arithmetic><MultiCycle> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+add_ln239_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: add_ln239_1_reg_5310[12:0] lv
+
+# ST_98
+local gmem0_addr_1 <getelementptr_229> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+gmem0_addr_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: gmem0_addr_1_reg_5331[63:0] lv
+
+local add_ln264_1 <add_264> <integer> <Arithmetic><MultiCycle> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+add_ln264_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: add_ln264_1_reg_5337[12:0] lv
+
+local add_ln287_2 <add_287> <integer> <Arithmetic><MultiCycle> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+add_ln287_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: add_ln287_2_reg_5342[12:0] lv
+
+local add_ln301_1 <add_301> <integer> <Arithmetic><MultiCycle> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+add_ln301_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: add_ln301_1_reg_5347[12:0] lv
+
+# ST_167
+local trunc_ln264_8 <trunc_264> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_8 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_8_reg_5357[7:0] lv
+
+local trunc_ln264_1 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_1_reg_5362[7:0] lv
+
+local trunc_ln264_2 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_2_reg_5367[7:0] lv
+
+local trunc_ln264_3 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_3_reg_5372[7:0] lv
+
+local trunc_ln264_4 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_4 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_4_reg_5377[7:0] lv
+
+local trunc_ln264_5 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_5 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_5_reg_5382[7:0] lv
+
+local trunc_ln264_6 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_6 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_6_reg_5387[7:0] lv
+
+local trunc_ln264_7 <partselect_264> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+trunc_ln264_7 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: trunc_ln264_7_reg_5392[7:0] lv
+
+# ST_169
+local data_vec_8 <trunc_229> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: data_vec_8_reg_5397[7:0] lv
+
+local data_vec_9 <partselect_229> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: data_vec_9_reg_5402[7:0] lv
+
+local data_vec_10 <partselect_229> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: data_vec_10_reg_5407[7:0] lv
+
+local data_vec_11 <partselect_229> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229>
+data_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:229
+reg: data_vec_11_reg_5412[7:0] lv
+
+# ST_170
+local out_idx_xyz <> <integer> <Phi> 'phi' <>
+out_idx_xyz /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: out_idx_xyz_reg_1177[31:0] lv
+
+local shl_ln4 <bitconcatenate_239> <integer> <> 'bitconcatenate' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+shl_ln4 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: shl_ln4_reg_5457[3:0] lv
+
+local empty_53 <or_239> <integer> <Logic> 'or' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+empty_53 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: empty_53_reg_5465[3:0] lv
+
+local icmp_ln239 <icmp_239> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+icmp_ln239 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: icmp_ln239_reg_5473[0:0] lv
+
+local shl_ln239_2 <shl_239> <integer> <Shift> 'shl' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+shl_ln239_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: shl_ln239_2_reg_5481[1:0] lv
+
+local icmp_ln239_1 <icmp_239> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+icmp_ln239_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: icmp_ln239_1_reg_5489[0:0] lv
+
+local icmp_ln239_2 <icmp_239> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+icmp_ln239_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: icmp_ln239_2_reg_5497[0:0] lv
+
+local icmp_ln239_3 <icmp_239> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239>
+icmp_ln239_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:239
+reg: icmp_ln239_3_reg_5505[0:0] lv
+
+local icmp_ln287 <icmp_287> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+icmp_ln287 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: icmp_ln287_reg_5513[0:0] lv
+
+local zext_ln287_3 <zext_287> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+zext_ln287_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: zext_ln287_3_reg_5519[4:0] lv
+
+local sub_ln287_2 <sub_287> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+sub_ln287_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: sub_ln287_2_reg_5525[4:0] lv
+
+local icmp_ln287_1 <icmp_287> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+icmp_ln287_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: icmp_ln287_1_reg_5530[0:0] lv
+
+local zext_ln287_7 <zext_287> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+zext_ln287_7 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: zext_ln287_7_reg_5536[4:0] lv
+
+local sub_ln287_5 <sub_287> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+sub_ln287_5 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: sub_ln287_5_reg_5542[4:0] lv
+
+local icmp_ln287_2 <icmp_287> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+icmp_ln287_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: icmp_ln287_2_reg_5547[0:0] lv
+
+local zext_ln287_11 <zext_287> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+zext_ln287_11 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: zext_ln287_11_reg_5553[4:0] lv
+
+local sub_ln287_8 <sub_287> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+sub_ln287_8 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: sub_ln287_8_reg_5559[4:0] lv
+
+local icmp_ln287_3 <icmp_287> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+icmp_ln287_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: icmp_ln287_3_reg_5564[0:0] lv
+
+local zext_ln287_15 <zext_287> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+zext_ln287_15 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: zext_ln287_15_reg_5570[4:0] lv
+
+local sub_ln287_11 <sub_287> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+sub_ln287_11 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: sub_ln287_11_reg_5576[4:0] lv
+
+local weight_ch_vec <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_reg_5581[7:0] lv
+
+local weight_ch_vec_1 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_1_reg_5586[7:0] lv
+
+local weight_ch_vec_2 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_2_reg_5591[7:0] lv
+
+local weight_ch_vec_3 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_3_reg_5596[7:0] lv
+
+local weight_ch_vec_4 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_4_reg_5601[7:0] lv
+
+local weight_ch_vec_5 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_5_reg_5606[7:0] lv
+
+local weight_ch_vec_6 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_6_reg_5611[7:0] lv
+
+local weight_ch_vec_7 <load_301> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301>
+weight_ch_vec /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:301
+reg: weight_ch_vec_7_reg_5616[7:0] lv
+
+# ST_173
+local lshr_ln287 <lshr_287> <integer> <Shift> 'lshr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+lshr_ln287 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: lshr_ln287_reg_5646[15:0] lv
+
+local lshr_ln287_2 <lshr_287> <integer> <Shift> 'lshr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+lshr_ln287_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: lshr_ln287_2_reg_5651[15:0] lv
+
+local lshr_ln287_4 <lshr_287> <integer> <Shift> 'lshr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+lshr_ln287_4 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: lshr_ln287_4_reg_5656[15:0] lv
+
+local lshr_ln287_6 <lshr_287> <integer> <Shift> 'lshr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+lshr_ln287_6 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: lshr_ln287_6_reg_5661[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_6
+local indvar_flatten33 <phi_123> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+add_ln123 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: indvar_flatten33_reg_957[29:0] lv
+
+local win_itm_z_1 <phi_123> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+select_ln123_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: win_itm_z_1_reg_968[13:0] lv
+
+local indvar_flatten <phi_124> <integer> <Phi> 'phi' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+select_ln124_4 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: indvar_flatten_reg_979[15:0] lv
+
+local icmp_ln123 <icmp_123> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+icmp_ln123 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: icmp_ln123_reg_4649[0:0] lv
+
+local icmp_ln124 <icmp_124> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124>
+icmp_ln124 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:124
+reg: icmp_ln124_reg_4653[0:0] lv
+
+local select_ln123_2 <select_123> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+select_ln123_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: select_ln123_2_reg_4668[13:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp1_stage0)
+# ST_89
+local total_cnt <> <integer> <Phi> 'phi' <>
+total_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185
+reg: total_cnt_reg_1057[31:0] lv
+
+local item_loop_cnt <> <integer> <Phi> 'phi' <>
+item_loop_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: item_loop_cnt_reg_1068[31:0] lv
+
+local gp_num_x <> <integer> <Phi> 'phi' <>
+gp_num_x /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_x_reg_1080[15:0] lv
+
+local icmp_ln185 <icmp_185> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185>
+icmp_ln185 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185
+reg: icmp_ln185_reg_5034[0:0] lv
+
+local icmp_ln192 <icmp_192> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192>
+icmp_ln192 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:192
+reg: icmp_ln192_reg_5038[0:0] lv
+
+local icmp_ln204 <icmp_204> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:204>
+icmp_ln204 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:204
+reg: icmp_ln204_reg_5045[0:0] lv
+
+local add_ln348 <add_348> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348>
+add_ln348 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: add_ln348_reg_5052[31:0] lv
+
+# ST_90
+local gp_num_x_winbuf_1 <> <integer> <Phi> 'phi' <>
+gp_num_x_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_x_winbuf_1_reg_1092[15:0] lv
+
+local gp_num_y_winbuf_2 <> <integer> <Phi> 'phi' <>
+gp_num_y_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_y_winbuf_2_reg_1102[15:0] lv
+
+local icmp_ln221 <icmp_221> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:221>
+icmp_ln221 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:221
+reg: icmp_ln221_reg_5057[0:0] lv
+
+local win_itm_x_load_1 <load_223> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:223>
+win_itm_x_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:223
+reg: win_itm_x_load_1_reg_5061[7:0] lv
+
+local win_itm_y_load_1 <load_224> <integer> <> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:224>
+win_itm_y_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:224
+reg: win_itm_y_load_1_reg_5067[7:0] lv
+
+local zext_ln228 <zext_228> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:228>
+zext_ln228 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:228
+reg: zext_ln228_reg_5073[16:0] lv
+
+local sub_ln269 <sub_269> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269>
+sub_ln269 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:269
+reg: sub_ln269_reg_5083[19:0] lv
+
+local icmp_ln348 <icmp_348> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348>
+icmp_ln348 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: icmp_ln348_reg_5088[0:0] lv
+
+local and_ln352 <and_352> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:352>
+and_ln352 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:352
+reg: and_ln352_reg_5097[0:0] lv
+
+local gp_num_y_winbuf_5 <select_348> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348>
+gp_num_y_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_y_winbuf_5_reg_5103[15:0] lv
+
+local gp_num_x_winbuf_4 <select_348> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348>
+gp_num_x_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:348
+reg: gp_num_x_winbuf_4_reg_5108[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local div_cast <> <integer> <> 'partselect' <>
+reg: div_cast_reg_4408[13:0] lv
+
+local bound <> <integer> <Arithmetic> 'mul' <>
+reg: bound_reg_4414[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state5)
+# ST_5
+local bias_read <> <integer> <> 'read' <>
+reg: bias_read_reg_4429[63:0] lv
+
+local weights_read <> <integer> <> 'read' <>
+reg: weights_read_reg_4434[63:0] lv
+
+local bottom_read <> <integer> <> 'read' <>
+reg: bottom_read_reg_4439[63:0] lv
+
+local div_cast21_cast <> <integer> <> 'zext' <>
+reg: div_cast21_cast_reg_4535[14:0] lv
+
+local win_size_y_cast22 <> <integer> <> 'zext' <>
+reg: win_size_y_cast22_reg_4540[8:0] lv
+
+local win_size_y_cast <> <integer> <> 'zext' <>
+reg: win_size_y_cast_reg_4545[12:0] lv
+
+local win_size_x_cast <> <integer> <> 'zext' <>
+reg: win_size_x_cast_reg_4553[8:0] lv
+
+local padding_cast30 <> <integer> <> 'zext' <>
+reg: padding_cast30_reg_4558[15:0] lv
+
+local padding_cast19 <> <integer> <> 'zext' <>
+reg: padding_cast19_reg_4566[30:0] lv
+
+local padding_cast <> <integer> <> 'zext' <>
+reg: padding_cast_reg_4571[8:0] lv
+
+local data_dim1_cast33 <> <integer> <> 'zext' <>
+reg: data_dim1_cast33_reg_4576[17:0] lv
+
+local data_dim1_cast28 <> <integer> <> 'zext' <>
+reg: data_dim1_cast28_reg_4581[16:0] lv
+
+local add <> <integer> <Arithmetic> 'add' <>
+reg: add_reg_4586[8:0] lv
+
+local add_cast49 <> <integer> <> 'zext' <>
+reg: add_cast49_reg_4591[15:0] lv
+
+local add23 <> <integer> <Arithmetic> 'add' <>
+reg: add23_reg_4596[8:0] lv
+
+local add23_cast50 <> <integer> <> 'zext' <>
+reg: add23_cast50_reg_4602[15:0] lv
+
+local conv28 <> <integer> <> 'zext' <>
+reg: conv28_reg_4607[31:0] lv
+
+local zext_ln123 <zext_123> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123>
+zext_ln123 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:123
+reg: zext_ln123_reg_4612[29:0] lv
+
+local win_size_x_cast61 <> <integer> <> 'zext' <>
+reg: win_size_x_cast61_reg_4617[12:0] lv
+
+local bound4 <> <integer> <Arithmetic><MultiCycle> 'mul' <>
+reg: bound4_reg_4624[29:0] lv
+
+local or_ln132_3 <or_132> <integer> <Logic> 'or' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:132>
+or_ln132_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:132
+reg: or_ln132_3_reg_4629[0:0] lv
+
+local icmp_ln125 <icmp_125> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:125>
+icmp_ln125 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:125
+reg: icmp_ln125_reg_4634[0:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state83)
+# ST_83
+local gp_num_y_winbuf <icmp_152> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:152>
+gp_num_y_winbuf /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:152
+reg: gp_num_y_winbuf_reg_4849[0:0] lv
+
+local ItemLoopBound <select_177> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177>
+ItemLoopBound /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177
+reg: ItemLoopBound_reg_4860[29:0] lv
+
+local ItemLastLoopBound <select_181> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:181>
+ItemLastLoopBound /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:181
+reg: ItemLastLoopBound_reg_4866[29:0] lv
+
+local add_ln183 <add_183> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+add_ln183 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: add_ln183_reg_4872[8:0] lv
+
+local cmp93 <> <integer> <Comparator> 'icmp' <>
+reg: cmp93_reg_4883[0:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state85)
+# ST_85
+local mul_ln183 <mul_183> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+mul_ln183 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: mul_ln183_reg_4898[31:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state86)
+# ST_86
+local add_ln183_1 <add_183> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+add_ln183_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: add_ln183_1_reg_4903[31:0] lv
+
+local mul_ln183_1 <mul_183> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+mul_ln183_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: mul_ln183_1_reg_4908[23:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state88)
+# ST_88
+local zext_ln287 <zext_287> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287>
+zext_ln287 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:287
+reg: zext_ln287_reg_4928[12:0] lv
+
+local zext_ln177 <zext_177> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177>
+zext_ln177 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177
+reg: zext_ln177_reg_4933[15:0] lv
+
+local sext_ln183_1 <sext_183> <integer> <> 'sext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+sext_ln183_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: sext_ln183_1_reg_4938[16:0] lv
+
+local TotalLoopBound <mul_183> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+TotalLoopBound /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: TotalLoopBound_reg_4944[31:0] lv
+
+local tmp_15_cast <> <integer> <> 'zext' <>
+reg: tmp_15_cast_reg_4949[15:0] lv
+
+local sub183_cast <> <integer> <> 'sext' <>
+reg: sub183_cast_reg_4954[16:0] lv
+
+local weight_dim1x2_cast <> <integer> <> 'zext' <>
+reg: weight_dim1x2_cast_reg_4960[23:0] lv
+
+local conv_x_cast51 <> <integer> <> 'zext' <>
+reg: conv_x_cast51_reg_4965[20:0] lv
+
+local sub187 <> <integer> <Arithmetic> 'add' <>
+reg: sub187_reg_4970[8:0] lv
+
+local sub191 <> <integer> <Arithmetic> 'add' <>
+reg: sub191_reg_4975[8:0] lv
+
+local sub448 <add_183> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183>
+sub448 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:183
+reg: sub448_reg_4980[16:0] lv
+
+local sub452_cast <sext_152> <integer> <> 'sext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:152>
+sub452_cast /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:152
+reg: sub452_cast_reg_4986[16:0] lv
+
+local sub372_cast <> <integer> <> 'sext' <>
+reg: sub372_cast_reg_4992[20:0] lv
+
+local sub383 <add_177> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177>
+sub383 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177
+reg: sub383_reg_4997[8:0] lv
+
+local sub387 <add_177> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177>
+sub387 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:177
+reg: sub387_reg_5002[8:0] lv
+
+local zext_ln223 <zext_223> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:223>
+zext_ln223 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:223
+reg: zext_ln223_reg_5007[15:0] lv
+
+local sext_ln185 <sext_185> <integer> <> 'sext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185>
+sext_ln185 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:185
+reg: sext_ln185_reg_5012[15:0] lv
+
+local zext_ln264 <zext_264> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+zext_ln264 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: zext_ln264_reg_5017[12:0] lv
+
+local zext_ln264_1 <zext_264> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264>
+zext_ln264_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp:264
+reg: zext_ln264_1_reg_5023[12:0] lv
+
+
+End Function 'memRead'
+

@@ -1,0 +1,11 @@
+Tue Dec 14 21:05:54 2021: Server was asked to start on port: '34987'
+Tue Dec 14 21:05:54 2021: Server is using token UUID: '1a04a91c-f33a-4adc-91d8-77380634d919'
+Tue Dec 14 21:05:54 2021: Attempting to start server on port '34987'
+Tue Dec 14 21:05:54 2021: XRC main fifo: created main fifo '/tmp/xrcmain1a04a91c-f33a-4adc-91d8-77380634d919', fd read = 13
+Tue Dec 14 21:05:54 2021: Running Rule Check Server
+Tue Dec 14 21:05:54 2021: Version 1.6.1
+Tue Dec 14 21:05:55 2021: Rule Check Server: Accepted socket connection from client
+Tue Dec 14 21:05:55 2021: EXCHANGE_TOKEN received, server token: 1a04a91c-f33a-4adc-91d8-77380634d919, passed token: 1a04a91c-f33a-4adc-91d8-77380634d919
+Tue Dec 14 21:05:55 2021: SESSION_MGR: creating session with session uuid: '58a81a98-9579-4d89-ac2e-e2c6478cef96' and name 'v++_link_conv'
+Tue Dec 14 21:05:59 2021: Rule Check Server: Accepted socket connection from client
+Tue Dec 14 21:06:10 2021: SESSION_MGR: closing session for UUID '58a81a98-9579-4d89-ac2e-e2c6478cef96' with name 'v++_link_conv'

@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'maxPool'
+================================================================
++ General Information: 
+    * Date:           Tue Dec 14 21:05:17 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:47 MST 2020)
+    * Project:        maxPool
+    * Solution:       solution (Vitis Kernel Flow Target)
+    * Product family: virtexuplus
+    * Target device:  xcvu9p-flgb2104-2-i
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |        Modules       | Issue|       | Latency | Latency| Iteration|         | Trip |          |         |         |            |            |     |
+    |        & Loops       | Type | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |+ maxPool             |     -|   0.00|        -|       -|         -|        -|     -|        no|  4 (~0%)|  4 (~0%)|  3981 (~0%)|  5066 (~0%)|    -|
+    | o VITIS_LOOP_125_1   |     -|  -2.43|        -|       -|         -|        -|     -|        no|        -|        -|           -|           -|    -|
+    |  o VITIS_LOOP_144_2  |    II|  -2.43|        -|       -|       150|        2|     -|       yes|        -|        -|           -|           -|    -|
+    +----------------------+------+-------+---------+--------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+

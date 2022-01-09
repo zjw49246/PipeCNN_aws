@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="coreConv" xd:componentRef="coreConv" xd:initiationInterval="x" xd:clockPeriod="3.333" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="output_num" xd:originalName="output_num" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_loop_cnt" xd:originalName="conv_loop_cnt" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="contol" xd:originalName="contol" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="frac_w" xd:originalName="frac_w" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="frac_din" xd:originalName="frac_din" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="frac_dout" xd:originalName="frac_dout" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_in.data" xd:originalName="bias_in" xd:direction="in" xd:interfaceRef="bias_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_in.keep" xd:originalName="bias_in" xd:direction="in" xd:interfaceRef="bias_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_in.strb" xd:originalName="bias_in" xd:direction="in" xd:interfaceRef="bias_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="bias_in.last" xd:originalName="bias_in" xd:direction="in" xd:interfaceRef="bias_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.data" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.keep" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.strb" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.last" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_in.data" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_in.keep" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_in.strb" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_in.last" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_out.data" xd:originalName="conv_out" xd:direction="out" xd:interfaceRef="conv_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_out.keep" xd:originalName="conv_out" xd:direction="out" xd:interfaceRef="conv_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_out.strb" xd:originalName="conv_out" xd:direction="out" xd:interfaceRef="conv_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="conv_out.last" xd:originalName="conv_out" xd:direction="out" xd:interfaceRef="conv_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="2392" xd:FF="2879" xd:BRAM="0" xd:DSP="4"/>
+</xd:acceleratorMap>

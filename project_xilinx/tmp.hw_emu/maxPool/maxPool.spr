@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maxPool" dir="">
+  <FileSets>
+    <FileSet Name="kernel_maxPool" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

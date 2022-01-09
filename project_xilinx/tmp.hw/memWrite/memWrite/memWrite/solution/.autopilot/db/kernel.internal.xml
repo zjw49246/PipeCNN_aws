@@ -1,0 +1,26 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel name="memWrite" language="c" vlnv="xilinx.com:hls:memWrite:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" compileOptions="" profileType="none" hwControlProtocol="ap_ctrl_chain">
+    <ports>
+      <port name="M_AXI_GMEM0" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="8"/>
+      <port name="CONV_IN" mode="read_only" dataWidth="16" portType="stream"/>
+      <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x1000" dataWidth="32"/>
+    </ports>
+    <args>
+    <arg id="0" name="out_dim1" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x10" size="0x4" type="unsigned int"/>
+    <arg id="1" name="out_dim2" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x18" size="0x4" type="unsigned int"/>
+    <arg id="2" name="out_dim3" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x20" size="0x4" type="unsigned int"/>
+    <arg id="3" name="out_dim1xbatch" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x28" size="0x4" type="unsigned int"/>
+    <arg id="4" name="out_dim1x2xbatch" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x4" offset="0x30" size="0x4" type="unsigned int"/>
+    <arg id="5" name="batch_indx_dim1" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x38" size="0x4" type="unsigned int"/>
+    <arg id="6" name="batch_indx_dim2" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x40" size="0x4" type="unsigned int"/>
+    <arg id="7" name="padd_offset" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x48" size="0x4" type="unsigned int"/>
+    <arg id="8" name="pool_on" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x50" size="0x4" type="unsigned int"/>
+    <arg id="9" name="pool_size" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x58" size="0x4" type="unsigned int"/>
+    <arg id="10" name="pool_stride" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x60" size="0x4" type="unsigned int"/>
+    <arg id="11" name="top" addressQualifier="1" port="M_AXI_GMEM0" hostOffset="0x0" hostSize="0x8" offset="0x68" size="0x8" type="void*"/>
+      <arg id="12" name="conv_in" addressQualifier="4" port="CONV_IN" hostOffset="0x0" hostSize="0x8" offset="0x0" size="0x0" type="stream&lt;hls::axis&lt;ap_uint&lt;16&gt;, 0, 0, 0&gt;, 0&gt;&amp;" memSize="0x2" origName="conv_in" origUse="variable"/>
+    </args>
+    <compileWorkGroupSize x="1" y="1" z="1"/>
+    <maxWorkGroupSize x="1" y="1" z="1"/>
+  </kernel>
+</root>

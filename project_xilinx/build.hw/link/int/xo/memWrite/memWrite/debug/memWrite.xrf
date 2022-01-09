@@ -1,0 +1,157 @@
+Begin Function 'memWrite'
+
+RTL state condition: (1'b1 == 1'b1)
+# ST_9
+local trunc_ln149_1 <trunc_149> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149>
+trunc_ln149_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149
+reg: trunc_ln149_1_reg_1152[29:0] lv
+
+local trunc_ln149_2 <trunc_149> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149>
+trunc_ln149_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149
+reg: trunc_ln149_2_reg_1157[30:0] lv
+
+local sub_ln153 <sub_153> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:153>
+sub_ln153 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:153
+reg: sub_ln153_reg_1162[1:0] lv
+
+local mul_ln154 <mul_154> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:154>
+mul_ln154 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:154
+reg: mul_ln154_reg_1167[29:0] lv
+
+local mul_ln149_1 <mul_149> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149>
+mul_ln149_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149
+reg: mul_ln149_1_reg_1172[30:0] lv
+
+# ST_11
+local gmem0_addr <getelementptr_167> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:167>
+gmem0_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:167
+reg: gmem0_addr_reg_1187[63:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_6
+local i <> <integer> <Phi> 'phi' <>
+i /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96
+reg: i_reg_272[31:0] lv
+
+local lane_num_idx <> <integer> <Phi> 'phi' <>
+lane_num_idx /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:186
+reg: lane_num_idx_reg_283[15:0] lv
+
+local lane_item_idx <> <integer> <Phi> 'phi' <>
+lane_item_idx /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:201
+reg: lane_item_idx_reg_295[7:0] lv
+
+local out_idx_y <> <integer> <Phi> 'phi' <>
+out_idx_y /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:191
+reg: out_idx_y_reg_307[15:0] lv
+
+local out_idx_x <> <integer> <Phi> 'phi' <>
+out_idx_x /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:196
+reg: out_idx_x_reg_318[15:0] lv
+
+local icmp_ln96 <icmp_96> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96>
+icmp_ln96 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96
+reg: icmp_ln96_reg_1077[0:0] lv
+
+local add_ln149_1 <add_149> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149>
+add_ln149_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149
+reg: add_ln149_1_reg_1084[16:0] lv
+
+local sub_ln152_2 <sub_152> <integer> <Arithmetic> 'sub' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152>
+sub_ln152_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152
+reg: sub_ln152_2_reg_1090[18:0] lv
+
+local trunc_ln148 <trunc_148> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:148>
+trunc_ln148 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:148
+reg: trunc_ln148_reg_1097[1:0] lv
+
+local and_ln159 <and_159> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:159>
+and_ln159 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:159
+reg: and_ln159_reg_1103[0:0] lv
+
+local lane_num_idx_2 <select_186> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:186>
+lane_num_idx /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:186
+reg: lane_num_idx_2_reg_1107[15:0] lv
+
+local lane_item_idx_2 <select_201> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:201>
+lane_item_idx /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:201
+reg: lane_item_idx_2_reg_1122[7:0] lv
+
+# ST_7
+local tmp_1 <bitselect_152> <integer> <> 'bitselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152>
+tmp_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152
+reg: tmp_1_reg_1127[0:0] lv
+
+local index_z_group <select_152> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152>
+index_z_group /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:152
+reg: index_z_group_reg_1132[15:0] lv
+
+local select_ln167 <select_167> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:167>
+select_ln167 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:167
+reg: select_ln167_reg_1137[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local out_dim1_cast <> <integer> <> 'zext' <>
+reg: out_dim1_cast_reg_968[15:0] lv
+
+local out_dim2_cast <> <integer> <> 'zext' <>
+reg: out_dim2_cast_reg_973[15:0] lv
+
+local div <> <integer> <> 'partselect' <>
+reg: div_reg_983[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state5)
+# ST_5
+local top_read <> <integer> <> 'read' <>
+reg: top_read_reg_1003[63:0] lv
+
+local out_dim3_cast14 <> <integer> <> 'zext' <>
+reg: out_dim3_cast14_reg_1008[18:0] lv
+
+local padd_offset_cast12 <> <integer> <> 'zext' <>
+reg: padd_offset_cast12_reg_1013[18:0] lv
+
+local padd_offset_cast <> <integer> <> 'zext' <>
+reg: padd_offset_cast_reg_1018[17:0] lv
+
+local cmp26 <> <integer> <Comparator> 'icmp' <>
+reg: cmp26_reg_1023[0:0] lv
+
+local mul33_cast <> <integer> <> 'zext' <>
+reg: mul33_cast_reg_1027[16:0] lv
+
+local conv35 <> <integer> <> 'zext' <>
+reg: conv35_reg_1032[31:0] lv
+
+local mul42_cast <> <integer> <> 'zext' <>
+reg: mul42_cast_reg_1037[16:0] lv
+
+local sub107 <> <integer> <Arithmetic> 'add' <>
+reg: sub107_reg_1042[16:0] lv
+
+local sub111_cast <> <integer> <> 'sext' <>
+reg: sub111_cast_reg_1047[16:0] lv
+
+local sext_ln96 <sext_96> <integer> <> 'sext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96>
+sext_ln96 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96
+reg: sext_ln96_reg_1052[16:0] lv
+
+local mul_ln96_1 <mul_96> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96>
+mul_ln96_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:96
+reg: mul_ln96_1_reg_1057[31:0] lv
+
+local trunc_ln149 <trunc_149> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149>
+trunc_ln149 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:149
+reg: trunc_ln149_reg_1062[30:0] lv
+
+local trunc_ln154 <trunc_154> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:154>
+trunc_ln154 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memWrite.cpp:154
+reg: trunc_ln154_reg_1067[29:0] lv
+
+
+End Function 'memWrite'
+

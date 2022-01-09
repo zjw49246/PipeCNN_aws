@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="6" VersionMinor="0" SoftwareVersionMajor="2020" SoftwareVersionMinor="2" IpCache="no">
+  <IpCaches/>
+  <Kernels>
+    <Kernel Name="memWrite" Dir="memWrite" IP="ip_repo/xilinx_com_hls_memWrite_1_0" TopIpDir="." ProjectID="" Debug="yes" Hls="no" Pdi="no" ShimSoln="no" SwEmu="no">
+      <SupportedFlows>
+        <SupportedFlow>CPU_EMU</SupportedFlow>
+        <SupportedFlow>HW_EMU</SupportedFlow>
+        <SupportedFlow>SYSTEM</SupportedFlow>
+      </SupportedFlows>
+    </Kernel>
+  </Kernels>
+</Root>

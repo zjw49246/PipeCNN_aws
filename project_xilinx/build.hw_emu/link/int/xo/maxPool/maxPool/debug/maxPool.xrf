@@ -1,0 +1,377 @@
+Begin Function 'maxPool'
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage0)
+# ST_6
+local k <> <integer> <Phi> 'phi' <>
+k /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144
+reg: k_reg_489[15:0] lv
+
+local lane_cnt <> <integer> <Phi> 'phi' <>
+reg: lane_cnt_reg_501[7:0] lv
+
+local gp_final_cnt <> <integer> <Phi> 'phi' <>
+reg: gp_final_cnt_reg_513[7:0] lv
+
+local pool_win_cnt <> <integer> <Phi> 'phi' <>
+pool_win_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:254
+reg: pool_win_cnt_reg_525[15:0] lv
+
+local item_loop_cnt <> <integer> <Phi> 'phi' <>
+item_loop_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:258
+reg: item_loop_cnt_reg_537[15:0] lv
+
+local icmp_ln144 <icmp_144> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144>
+icmp_ln144 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144
+reg: icmp_ln144_reg_2196[0:0] lv
+
+local and_ln234 <and_234> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:234>
+and_ln234 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:234
+reg: and_ln234_reg_2205[0:0] lv
+
+local add_ln235_1 <add_235> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:235>
+add_ln235_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:235
+reg: add_ln235_1_reg_2209[19:0] lv
+
+local icmp_ln235 <icmp_235> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:235>
+icmp_ln235 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:235
+reg: icmp_ln235_reg_2214[0:0] lv
+
+local tmp_2 <bitselect_237> <integer> <> 'bitselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237>
+tmp_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237
+reg: tmp_2_reg_2218[0:0] lv
+
+local trunc_ln237_1 <partselect_237> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237>
+trunc_ln237_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237
+reg: trunc_ln237_1_reg_2224[14:0] lv
+
+local trunc_ln237_2 <partselect_237> <integer> <> 'partselect' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237>
+trunc_ln237_2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:237
+reg: trunc_ln237_2_reg_2229[14:0] lv
+
+local trunc_ln238 <trunc_238> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238>
+trunc_ln238 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238
+reg: trunc_ln238_reg_2234[1:0] lv
+
+local trunc_ln238_1 <trunc_238> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238>
+trunc_ln238_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238
+reg: trunc_ln238_1_reg_2239[1:0] lv
+
+local and_ln239 <and_239> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:239>
+and_ln239 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:239
+reg: and_ln239_reg_2244[0:0] lv
+
+local trunc_ln240_1 <trunc_240> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240>
+trunc_ln240_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+reg: trunc_ln240_1_reg_2248[3:0] lv
+
+# ST_8
+local empty <trunc_227> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:227>
+empty /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:227
+reg: empty_reg_2340[2:0] lv
+
+local row_reg0_addr <getelementptr_227> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:227>
+row_reg0_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:227
+reg: row_reg0_addr_reg_2345[2:0] lv
+
+local row_reg1_addr <getelementptr_185> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185>
+row_reg1_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185
+reg: row_reg1_addr_reg_2351[2:0] lv
+
+local trunc_ln185 <trunc_185> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185>
+trunc_ln185 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185
+reg: trunc_ln185_reg_2356[2:0] lv
+
+local pool_final_addr <getelementptr_185> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185>
+pool_final_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:185
+reg: pool_final_addr_reg_2361[3:0] lv
+
+local win_item_x_2 <> <integer> <Phi> 'phi' <>
+reg: win_item_x_2_reg_621[7:0] lv
+
+local win_item_y_3 <> <integer> <Phi> 'phi' <>
+reg: win_item_y_3_reg_633[7:0] lv
+
+local win_item_s_3 <> <integer> <Phi> 'phi' <>
+reg: win_item_s_3_reg_645[7:0] lv
+
+local win_item_cnt_3 <> <integer> <Phi> 'phi' <>
+reg: win_item_cnt_3_reg_657[7:0] lv
+
+# ST_10
+local add43 <add_266> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266>
+add43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266
+add43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151
+add43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270
+add43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:218
+add43 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:149
+reg: add43_reg_2375[31:0] lv
+
+local select_ln238 <select_238> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238>
+select_ln238 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:238
+reg: select_ln238_reg_2380[7:0] lv
+
+local tmp47 <add_144> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144>
+tmp47 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144
+tmp47 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+tmp47 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:235
+reg: tmp47_reg_2385[29:0] lv
+
+# ST_82
+local shift_reg_5 <trunc_160> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160>
+shift_reg /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160
+reg: shift_reg_5_reg_2408[7:0] lv
+
+# ST_84
+local row_reg0_addr_1 <getelementptr_179> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:179>
+row_reg0_addr_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:179
+reg: row_reg0_addr_1_reg_2441[2:0] lv
+
+local row_reg1_addr_1 <getelementptr_182> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:182>
+row_reg1_addr_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:182
+reg: row_reg1_addr_1_reg_2447[2:0] lv
+
+local temp_reg2_2 <select_163> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:163>
+temp_reg2 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:163
+reg: temp_reg2_2_reg_2452[7:0] lv
+
+local max_value_16 <select_53> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53>
+max_value /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53
+reg: max_value_16_reg_2458[7:0] lv
+
+local max_value_17 <select_53> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53>
+max_value /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53
+reg: max_value_17_reg_2465[7:0] lv
+
+# ST_86
+local pool_final_load <load_240> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240>
+pool_final_load /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+reg: pool_final_load_reg_2495[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_pp0_stage1)
+# ST_7
+local win_item_cnt <> <integer> <Phi> 'phi' <>
+reg: win_item_cnt_reg_549[7:0] lv
+
+local win_item_s <> <integer> <Phi> 'phi' <>
+reg: win_item_s_reg_561[7:0] lv
+
+local win_item_y <> <integer> <Phi> 'phi' <>
+reg: win_item_y_reg_573[7:0] lv
+
+local win_item_x <> <integer> <Phi> 'phi' <>
+reg: win_item_x_reg_585[7:0] lv
+
+local k_1 <add_144> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144>
+k /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144
+reg: k_1_reg_2263[15:0] lv
+
+local flag <trunc_145> <integer> <> 'trunc' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:145>
+flag /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:145
+reg: flag_reg_2268[0:0] lv
+
+local and_ln149 <and_149> <integer> <Logic> 'and' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:149>
+and_ln149 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:149
+reg: and_ln149_reg_2273[0:0] lv
+
+local cmp52 <icmp_151> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151>
+cmp52 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151
+reg: cmp52_reg_2282[0:0] lv
+
+local cmp55 <icmp_151> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151>
+cmp55 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151
+reg: cmp55_reg_2287[0:0] lv
+
+local cmp134 <icmp_218> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:218>
+cmp134 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:218
+reg: cmp134_reg_2292[0:0] lv
+
+local cmp101 <icmp_218> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:218>
+cmp101 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:218
+reg: cmp101_reg_2296[0:0] lv
+
+local add_ln240_3 <add_240> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240>
+add_ln240_3 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+reg: add_ln240_3_reg_2320[3:0] lv
+
+local gp_final_cnt_3 <> <integer> <Phi> 'phi' <>
+reg: gp_final_cnt_3_reg_597[7:0] lv
+
+local lane_cnt_2 <> <integer> <Phi> 'phi' <>
+reg: lane_cnt_2_reg_609[7:0] lv
+
+local pool_win_cnt_2 <select_254> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:254>
+pool_win_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:254
+reg: pool_win_cnt_2_reg_2330[15:0] lv
+
+local item_loop_cnt_2 <select_258> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:258>
+item_loop_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:258
+reg: item_loop_cnt_2_reg_2335[15:0] lv
+
+# ST_9
+local cmp37 <icmp_146> <integer> <Comparator> 'icmp' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:146>
+cmp37 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:146
+cmp37 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:151
+reg: cmp37_reg_2371[0:0] lv
+
+# ST_11
+local gmem0_addr <getelementptr_160> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160>
+gmem0_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160
+reg: gmem0_addr_reg_2390[63:0] lv
+
+local gmem0_addr_1 <getelementptr_160> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160>
+gmem0_addr_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160
+reg: gmem0_addr_1_reg_2396[63:0] lv
+
+local gmem1_addr <getelementptr_240> <integer> <> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240>
+gmem1_addr /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+reg: gmem1_addr_reg_2402[63:0] lv
+
+# ST_83
+local or_ln163 <or_163> <integer> <Logic> 'or' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:163>
+or_ln163 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:163
+reg: or_ln163_reg_2414[0:0] lv
+
+local max_value_15 <select_53> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53>
+max_value /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:53
+reg: max_value_15_reg_2421[7:0] lv
+
+local max_value_14 <select_52> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:52>
+max_value /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:52
+reg: max_value_14_reg_2427[7:0] lv
+
+local gmem0_addr_1_read <read_160> <integer> <> 'read' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160>
+gmem0_addr_1_read /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160
+reg: gmem0_addr_1_read_reg_2436[15:0] lv
+
+# ST_85
+local pool_final_addr_1 <getelementptr_195> <integer> <GetArrayAddress> 'getelementptr' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195>
+pool_final_addr_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195
+reg: pool_final_addr_1_reg_2471[3:0] lv
+
+local row_reg0_load_1 <load_195> <integer> <ArrayAccess><ArrayLoad><MultiCycle> 'load' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195>
+row_reg0_load_1 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:195
+reg: row_reg0_load_1_reg_2476[7:0] lv
+
+local max_value_18 <select_52> <integer> <> 'select' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:52>
+max_value /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:52
+reg: max_value_18_reg_2482[7:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state1)
+# ST_1
+local top_read <> <integer> <> 'read' <>
+reg: top_read_reg_2021[63:0] lv
+
+local bottom_read <> <integer> <> 'read' <>
+reg: bottom_read_reg_2026[63:0] lv
+
+local conv8 <> <integer> <> 'zext' <>
+reg: conv8_reg_2056[31:0] lv
+
+local pool_stride_cast <> <integer> <> 'zext' <>
+reg: pool_stride_cast_reg_2061[15:0] lv
+
+local conv_x_cast14 <> <integer> <> 'zext' <>
+reg: conv_x_cast14_reg_2066[23:0] lv
+
+local conv_x_cast1 <> <integer> <> 'zext' <>
+reg: conv_x_cast1_reg_2071[25:0] lv
+
+local pool_win_num_x_cast <> <integer> <> 'zext' <>
+reg: pool_win_num_x_cast_reg_2076[15:0] lv
+
+local sub <> <integer> <Arithmetic> 'add' <>
+reg: sub_reg_2082[8:0] lv
+
+local pool_dim1_cast16 <> <integer> <> 'zext' <>
+reg: pool_dim1_cast16_reg_2089[19:0] lv
+
+local pool_dim1_cast9 <> <integer> <> 'zext' <>
+reg: pool_dim1_cast9_reg_2094[15:0] lv
+
+local sub272 <> <integer> <Arithmetic> 'add' <>
+reg: sub272_reg_2099[16:0] lv
+
+local cmp78 <> <integer> <Comparator> 'icmp' <>
+reg: cmp78_reg_2104[0:0] lv
+
+local padd_offset_cast17 <> <integer> <> 'zext' <>
+reg: padd_offset_cast17_reg_2108[15:0] lv
+
+local padd_offset_cast <> <integer> <> 'zext' <>
+reg: padd_offset_cast_reg_2113[16:0] lv
+
+local pool_dim3_cast <> <integer> <> 'zext' <>
+reg: pool_dim3_cast_reg_2118[16:0] lv
+
+local zext_ln240 <zext_240> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240>
+zext_ln240 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:240
+reg: zext_ln240_reg_2123[29:0] lv
+
+local sub184 <> <integer> <Arithmetic> 'add' <>
+reg: sub184_reg_2128[8:0] lv
+
+local sub287 <> <integer> <Arithmetic> 'add' <>
+reg: sub287_reg_2133[16:0] lv
+
+local sub291 <> <integer> <Arithmetic> 'add' <>
+reg: sub291_reg_2138[8:0] lv
+
+local zext_ln160 <zext_160> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160>
+zext_ln160 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:160
+reg: zext_ln160_reg_2143[23:0] lv
+
+local zext_ln125 <zext_125> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:125>
+zext_ln125 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:125
+reg: zext_ln125_reg_2148[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state2)
+# ST_2
+local i <> <integer> <Phi> 'phi' <>
+i /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:125
+reg: i_reg_454[15:0] lv
+
+local pool_y_cnt <> <integer> <Phi> 'phi' <>
+pool_y_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270
+reg: pool_y_cnt_reg_465[7:0] lv
+
+local pool_group_cnt <> <integer> <Phi> 'phi' <>
+pool_group_cnt /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266
+reg: pool_group_cnt_reg_477[15:0] lv
+
+local i_1 <add_125> <integer> <Arithmetic> 'add' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:125>
+i /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:125
+reg: i_1_reg_2153[15:0] lv
+
+
+RTL state condition: (1'b1 == ap_CS_fsm_state5)
+# ST_5
+local pool_group_cnt_cast <zext_266> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266>
+pool_group_cnt_cast /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266
+reg: pool_group_cnt_cast_reg_2166[16:0] lv
+
+local mul <mul_266> <integer> <Arithmetic><MultiCycle> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266>
+mul /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:266
+reg: mul_reg_2171[31:0] lv
+
+local pool_y_cnt_cast10 <zext_270> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270>
+pool_y_cnt_cast10 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270
+reg: pool_y_cnt_cast10_reg_2176[8:0] lv
+
+local mul13 <mul_270> <integer> <Arithmetic> 'mul' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270>
+mul13 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:270
+reg: mul13_reg_2181[15:0] lv
+
+local shl_ln236 <shl_236> <integer> <Shift> 'shl' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:236>
+shl_ln236 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:236
+reg: shl_ln236_reg_2186[15:0] lv
+
+local zext_ln144 <zext_144> <integer> <> 'zext' </home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144>
+zext_ln144 /home/zhoujw/FPGA/PipeCNN/project_xilinx/device/maxPool.cpp:144
+reg: zext_ln144_reg_2191[29:0] lv
+
+
+End Function 'maxPool'
+

@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Dec 14 21:03:15 2021",
+ "timestampMillis": "1639533795872",
+ "buildStep": {
+  "cmdId": "c3a0089c-8a58-4f9d-aa75-c929938f51b0",
+  "name": "v++",
+  "logFile": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv.steps.log",
+  "commandLine": "/mnt/storage/gefeizuo/Xilinx/Vitis/2020.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw_emu --platform /home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm --save-temps -g --profile_kernel data:all:all:all --profile_kernel stall:all:all:all --define VGG16 --temp_dir ./tmp.hw_emu -c -k coreConv --config config_sp.u50 -Idevice -otmp.hw_emu/coreConv.xo device/coreConv.cpp ",
+  "args": [
+   "-t",
+   "hw_emu",
+   "--platform",
+   "/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2/xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+   "--save-temps",
+   "-g",
+   "--profile_kernel",
+   "data:all:all:all",
+   "--profile_kernel",
+   "stall:all:all:all",
+   "--define",
+   "VGG16",
+   "--temp_dir",
+   "./tmp.hw_emu",
+   "-c",
+   "-k",
+   "coreConv",
+   "--config",
+   "config_sp.u50",
+   "-Idevice",
+   "-otmp.hw_emu/coreConv.xo",
+   "device/coreConv.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/config_sp.u50",
+    "content": "kernel_frequency=0:300\n\n[connectivity]\n#sp=\u003ccompute_unit_name\u003e.\u003cinterface_name\u003e:\u003csptag[min:max]\u003e\n#sp=DataLoad_1.A_in:HBM[0]\n#sp=DataLoad_1.C_in:HBM[2]\n#sp=DataStore_1.B_out:HBM[1]\n#sp=DataStore_1.D_out:HBM[3]\n\n#stream_connect=\u003ccu_name\u003e.\u003coutput_port\u003e:\u003ccu_name\u003e.\u003cinput_port\u003e:[\u003cfifo_depth\u003e]\nstream_connect=memRead_1.bias_out:coreConv_1.bias_in\nstream_connect=memRead_1.weight_out:coreConv_1.weight_in\nstream_connect=memRead_1.data_out:coreConv_1.data_in\n##VGG connection\n#stream_connect=coreConv_1.conv_out:memWrite_1.conv_in\n##ResNet connection\nstream_connect=coreConv_1.conv_out:batchNorm_1.conv_in\nstream_connect=coreConv_1.bypass_out:memWrite_1.bypass_in\nstream_connect=batchNorm_1.bn_out:memWrite_1.bn_in\n\n\n##used for pipelined pooling\n#stream_connect=memWrite_1.pool_sync_out:maxPool_1.pool_sync_in\n\n#nk=\u003ckernal_name\u003e:#:\u003ccu_name1\u003e.\u003ccu_name2\u003e...\u003ccu_name#\u003e\n#nk=DataLoad:1:DataLoad_1\n#nk=DataStore:1:DataStore_1\n\n[vivado]\n##dump all waveforms\nprop=fileset.sim_1.xsim.elaborate.debug_level=all"
+   }
+  ],
+  "cwd": "/home/zhoujw/FPGA/PipeCNN/project_xilinx"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec 14 21:03:15 2021",
+ "timestampMillis": "1639533795873",
+ "status": {
+  "cmdId": "c3a0089c-8a58-4f9d-aa75-c929938f51b0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Dec 14 21:03:19 2021",
+ "timestampMillis": "1639533799934",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xpfm",
+  "hardwareDsa": "xilinx_aws-vu9p-f1_shell-v04261818_201920_2.xsa",
+  "platformDirectory": "/home/zhoujw/FPGA/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "coreConv",
+     "file": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/coreConv.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2020.2. SW Build (by xbuild) on 2020-11-18-05:13:29"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Tue Dec 14 21:03:19 2021",
+ "timestampMillis": "1639533799937",
+ "buildStep": {
+  "cmdId": "6230d727-d76c-45b3-aaa4-06ad3f49a747",
+  "name": "vitis_hls",
+  "logFile": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/vitis_hls.log",
+  "commandLine": "vitis_hls -f /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/zhoujw/FPGA/PipeCNN/project_xilinx"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec 14 21:03:19 2021",
+ "timestampMillis": "1639533799938",
+ "status": {
+  "cmdId": "6230d727-d76c-45b3-aaa4-06ad3f49a747",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834963",
+ "status": {
+  "cmdId": "6230d727-d76c-45b3-aaa4-06ad3f49a747",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834973",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv/solution/.autopilot/db/coreConv.design.xml",
+  "name": "coreConv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834973",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv/solution/.autopilot/db/.message_syn.xml",
+  "name": "coreConv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834974",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/reports/coreConv/hls_reports/coreConv_csynth.rpt",
+  "name": "coreConv",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834974",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/coreConv/coreConv/coreConv/solution/syn/report/coreConv_csynth.xml",
+  "name": "coreConv",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:54 2021",
+ "timestampMillis": "1639533834977",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/reports/coreConv/system_estimate_coreConv.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:55 2021",
+ "timestampMillis": "1639533835206",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/reports/coreConv/v++_compile_coreConv_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 14 21:03:55 2021",
+ "timestampMillis": "1639533835206",
+ "report": {
+  "path": "/home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/v++_compile_coreConv_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec 14 21:03:55 2021",
+ "timestampMillis": "1639533835207",
+ "status": {
+  "cmdId": "c3a0089c-8a58-4f9d-aa75-c929938f51b0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

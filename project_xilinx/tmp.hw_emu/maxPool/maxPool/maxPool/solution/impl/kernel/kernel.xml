@@ -1,0 +1,32 @@
+<root versionMajor="1" versionMinor="5">
+    <kernel name="maxPool" language="c" vlnv="xilinx.com:hls:maxPool:1.0" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="true" compileOptions="-g -DVGG16 -I /home/zhoujw/FPGA/PipeCNN/project_xilinx/device" profileType="none" hwControlProtocol="ap_ctrl_chain" interrupt="true">
+        <ports>
+            <port name="M_AXI_GMEM0" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="16"/>
+            <port name="M_AXI_GMEM1" portType="addressable" mode="master" base="0x0" range="0xFFFFFFFF" dataWidth="8"/>
+            <port name="S_AXI_CONTROL" portType="addressable" mode="slave" base="0x0" range="0x1000" dataWidth="32"/>
+        </ports>
+        <args>
+            <arg id="0" name="conv_x" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x10" size="0x4" type="unsigned int"/>
+            <arg id="1" name="conv_xy" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x18" size="0x4" type="unsigned int"/>
+            <arg id="2" name="pool_dim1" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x20" size="0x4" type="unsigned int"/>
+            <arg id="3" name="pool_dim3" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x28" size="0x4" type="unsigned int"/>
+            <arg id="4" name="pool_dim1x2" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x30" size="0x4" type="unsigned int"/>
+            <arg id="5" name="pool_size" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x38" size="0x4" type="unsigned int"/>
+            <arg id="6" name="pool_stride" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x40" size="0x4" type="unsigned int"/>
+            <arg id="7" name="padd_offset" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x48" size="0x4" type="unsigned int"/>
+            <arg id="8" name="pool_times" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x50" size="0x4" type="unsigned int"/>
+            <arg id="9" name="pool_group" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x58" size="0x4" type="unsigned int"/>
+            <arg id="10" name="pool_y_bound" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x60" size="0x4" type="unsigned int"/>
+            <arg id="11" name="item_loop_bound" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x68" size="0x4" type="unsigned int"/>
+            <arg id="12" name="load_data_bound" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x70" size="0x4" type="unsigned int"/>
+            <arg id="13" name="write_back_bound" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x2" offset="0x78" size="0x4" type="unsigned int"/>
+            <arg id="14" name="pool_win_num_x" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x80" size="0x4" type="unsigned int"/>
+            <arg id="15" name="win_size_x" addressQualifier="0" port="S_AXI_CONTROL" hostOffset="0x0" hostSize="0x1" offset="0x88" size="0x4" type="unsigned int"/>
+            <arg id="16" name="bottom" addressQualifier="1" port="M_AXI_GMEM0" hostOffset="0x0" hostSize="0x8" offset="0x90" size="0x8" type="void*"/>
+            <arg id="17" name="top" addressQualifier="1" port="M_AXI_GMEM1" hostOffset="0x0" hostSize="0x8" offset="0x9C" size="0x8" type="void*"/>
+        </args>
+        <compileWorkGroupSize x="1" y="1" z="1"/>
+        <maxWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+</root>
+

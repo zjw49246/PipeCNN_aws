@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: maxPool
+Log file: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/maxPool/maxPool/vitis_hls.log

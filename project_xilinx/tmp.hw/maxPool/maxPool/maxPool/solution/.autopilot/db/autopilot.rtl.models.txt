@@ -1,0 +1,12 @@
+maxPool_mul_8ns_8ns_16_1_1
+maxPool_mul_mul_16ns_16ns_32_4_1
+maxPool_mul_mul_16ns_8ns_24_4_1
+maxPool_mac_muladd_16ns_8ns_26ns_27_4_1
+maxPool_mac_muladd_16ns_16ns_16ns_30_4_1
+maxPool_row_reg0
+maxPool_row_reg1
+maxPool_pool_final
+maxPool_control_s_axi
+maxPool_gmem0_m_axi
+maxPool_gmem1_m_axi
+maxPool

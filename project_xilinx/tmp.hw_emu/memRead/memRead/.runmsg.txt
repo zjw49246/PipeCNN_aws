@@ -1,0 +1,2 @@
+performing high-level synthesis for kernel: memRead
+Log file: /home/zhoujw/FPGA/PipeCNN/project_xilinx/tmp.hw_emu/memRead/memRead/vitis_hls.log

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="memRead" dir="">
+  <FileSets>
+    <FileSet Name="kernel_memRead" Type="DesignSrcs">
+      <File Path="/home/zhoujw/FPGA/PipeCNN/project_xilinx/device/memRead.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>
